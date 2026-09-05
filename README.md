@@ -1,58 +1,56 @@
 # PROMISE-16Class-SRS Benchmark Dataset 🚀
 
-[![Dataset Version](https://img.shields.io/badge/Dataset-PROMISE__EXP__16Class-blue.svg)](https://github.com/umertanveer25/PROMISE-16Class-SRS)
+[![Dataset Version](https://img.shields.io/badge/Dataset-PROMISE__16Class__969-blue.svg)](https://github.com/umertanveer25/PROMISE-16Class-SRS)
+[![Samples](https://img.shields.io/badge/Samples-969-orange.svg)](https://github.com/umertanveer25/PROMISE-16Class-SRS)
 [![Compliance](https://img.shields.io/badge/Standard-ISO%2FIEC%2029148%20%7C%20ISO%2020926-green.svg)](https://github.com/umertanveer25/PROMISE-16Class-SRS)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-informational.svg)](https://www.python.org/)
 
-Official GitHub repository for **PROMISE-16Class-SRS**: The First Fine-Grained 16-Class Software Requirements Engineering (SRS) Benchmark Dataset.
+Official GitHub repository for **PROMISE-16Class-SRS**: The First Fine-Grained 16-Class Software Requirements Engineering (SRS) Benchmark Dataset (969 Requirements).
 
 ---
 
 ## 📌 Abstract & Overview
 
-Traditional Requirements Engineering (RE) benchmarks evaluate models on coarse-grained binary classification (`Functional` vs. `Non-Functional`) or multi-class NFR classification (`Security`, `Performance`, etc.). However, functional requirements (`F`) account for up to **61.4%** of real-world SRS specifications without any standardized sub-classification.
+Traditional Requirements Engineering (RE) benchmarks evaluate models on coarse-grained binary classification (`Functional` vs. `Non-Functional`) or multi-class NFR classification (`Security`, `Performance`, etc.). However, functional requirements (`F`) account for **45.82%** of the standard 969-requirement PROMISE benchmark without any standardized sub-classification.
 
-**PROMISE-16Class-SRS** addresses this fundamental gap by sub-classifying Functional Requirements into **5 ISO/IEC 29148 & ISO 20926 compliant Functional Sub-Classes**:
-1. `FR-UI` — User Interface & Visual Display
-2. `FR-Data` — Database Persistence & Data Processing
-3. `FR-Logic` — Business Logic, Rules & Calculations
-4. `FR-Integration` — Third-Party APIs, Services & System Protocols
-5. `FR-Notification` — User Alerts, Email & SMS Dispatching
+**PROMISE-16Class-SRS** sub-classifies the 444 Functional Requirements in `PROMISE` into **5 ISO/IEC 29148 & ISO 20926 compliant Functional Sub-Classes**:
+1. `FR-UI` — User Interface & Visual Display (187 samples)
+2. `FR-Integration` — Third-Party APIs, Services & Protocols (171 samples)
+3. `FR-Data` — Database Persistence & Data Processing (37 samples)
+4. `FR-Notification` — User Alerts, Email & SMS Dispatching (31 samples)
+5. `FR-Logic` — Business Logic, Rules & Calculations (18 samples)
 
-Combined with the 11 original Non-Functional (NFR) classes, **PROMISE-16Class-SRS** provides a unified 16-class fine-grained benchmark.
+Combined with the 11 original Non-Functional (NFR) quality classes, **PROMISE-16Class-SRS** provides a unified 16-class fine-grained benchmark on the **969 standard requirements dataset**.
 
 ---
 
-## 📊 Dataset Statistics & Class Distribution
+## 📊 16-Class Dataset Distribution (969 Requirements)
 
-### 1. Expanded Benchmark (`PROMISE_EXP_FineGrained_16Class.csv` — 3,677 Samples)
-
-| Class Category | Class Name | Description | Sample Count | Imbalance Ratio (IR) |
-| :--- | :--- | :--- | :---: | :---: |
-| **Functional** | `FR-Integration` | External APIs & System Protocols | 831 | 23.74 : 1 |
-| **Functional** | `FR-UI` | Interface Displays & User Controls | 826 | 23.60 : 1 |
-| **Functional** | `FR-Data` | Database Persistence & Records | 354 | 10.11 : 1 |
-| **Functional** | `FR-Notification` | Alerts, Emails & User Prompts | 150 | 4.29 : 1 |
-| **Functional** | `FR-Logic` | Business Calculations & Rules | 97 | 2.77 : 1 |
-| **Non-Functional** | `NFR-SE` | Security | 237 | 6.77 : 1 |
-| **Non-Functional** | `NFR-US` | Usability | 212 | 6.06 : 1 |
-| **Non-Functional** | `NFR-L` | Legal & Compliance | 209 | 5.97 : 1 |
-| **Non-Functional** | `NFR-PE` | Performance | 163 | 4.66 : 1 |
-| **Non-Functional** | `NFR-O` | Operational | 157 | 4.49 : 1 |
-| **Non-Functional** | `NFR-SC` | Scalability | 95 | 2.71 : 1 |
-| **Non-Functional** | `NFR-LF` | Look & Feel | 89 | 2.54 : 1 |
-| **Non-Functional** | `NFR-PO` | Portability | 76 | 2.17 : 1 |
-| **Non-Functional** | `NFR-MN` | Maintainability | 75 | 2.14 : 1 |
-| **Non-Functional** | `NFR-A` | Availability | 71 | 2.03 : 1 |
-| **Non-Functional** | `NFR-FT` | Fault Tolerance | 35 | 1.00 : 1 |
-| **Total** | **16 Classes** | **Full Benchmark** | **3,677** | **Max IR: 23.74 : 1** |
+| Class Category | Class Name | Description | Sample Count | Percentage | Imbalance Ratio (IR) |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+| **Functional** | `FR-UI` | User Interface & Visual Displays | 187 | 19.30% | 15.58 : 1 |
+| **Functional** | `FR-Integration` | System APIs & Protocols | 171 | 17.65% | 14.25 : 1 |
+| **Non-Functional** | `NFR-SE` | Security | 125 | 12.90% | 10.42 : 1 |
+| **Non-Functional** | `NFR-US` | Usability | 85 | 8.77% | 7.08 : 1 |
+| **Non-Functional** | `NFR-O` | Operational | 77 | 7.95% | 6.42 : 1 |
+| **Non-Functional** | `NFR-PE` | Performance | 67 | 6.91% | 5.58 : 1 |
+| **Non-Functional** | `NFR-LF` | Look & Feel | 49 | 5.06% | 4.08 : 1 |
+| **Functional** | `FR-Data` | Database Persistence & Records | 37 | 3.82% | 3.08 : 1 |
+| **Non-Functional** | `NFR-A` | Availability | 31 | 3.20% | 2.58 : 1 |
+| **Functional** | `FR-Notification` | Email/SMS Alerts & Notifications | 31 | 3.20% | 2.58 : 1 |
+| **Non-Functional** | `NFR-MN` | Maintainability | 24 | 2.48% | 2.00 : 1 |
+| **Non-Functional** | `NFR-SC` | Scalability | 22 | 2.27% | 1.83 : 1 |
+| **Functional** | `FR-Logic` | Business Calculations & Rules | 18 | 1.86% | 1.50 : 1 |
+| **Non-Functional** | `NFR-FT` | Fault Tolerance | 18 | 1.86% | 1.50 : 1 |
+| **Non-Functional** | `NFR-L` | Legal & Compliance | 15 | 1.55% | 1.25 : 1 |
+| **Non-Functional** | `NFR-PO` | Portability | 12 | 1.24% | 1.00 : 1 |
+| **Total** | **16 Classes** | **Standard PROMISE Benchmark** | **969** | **100.00%** | **Max IR: 15.58 : 1** |
 
 ---
 
 ## 🛠️ Multi-Factor Context-Aware Hybrid Classification Engine
 
-To assign bulletproof functional sub-classes, we utilize a **Multi-Factor Hybrid Engine** combining four contextual factors:
+Sub-class labels are generated via a **Multi-Factor Hybrid Engine** combining four contextual factors:
 
 $$\text{Score}(c) = 0.50 \cdot S_{\text{semantic}}(c) + 0.20 \cdot W_{\text{action}}(c) + 0.15 \cdot W_{\text{role}}(c) + 0.15 \cdot W_{\text{domain}}(c)$$
 
@@ -68,16 +66,14 @@ $$\text{Score}(c) = 0.50 \cdot S_{\text{semantic}}(c) + 0.20 \cdot W_{\text{acti
 ```
 PROMISE-16Class-SRS/
 ├── README.md
-├── PROMISE_EXP_FineGrained_16Class.csv   # 3,677-row Expanded Benchmark
-├── PROMISE_FineGrained_16Class_969.csv   # 969-row Standard Benchmark
-└── build_fine_grained_promise_exp.py     # Multi-Factor Dataset Generator Script
+├── PROMISE_FineGrained_16Class_969.csv   # Primary 969-row Benchmark Dataset
+├── audit_fine_grained_dataset.py         # Audit & Verification Script
+└── build_fine_grained_969.py             # Multi-Factor Dataset Generator Script
 ```
 
 ---
 
 ## 📖 Citation & Reference
-
-If you utilize this benchmark dataset in your research, please cite:
 
 ```bibtex
 @article{tanveer2026promise16class,
