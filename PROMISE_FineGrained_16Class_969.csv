@@ -1,0 +1,970 @@
+S.No,File,Requirement,Type,fine_grained_class
+47,1,The system shall refresh the display every 60 seconds.,PE,NFR-PE
+48,1,The application shall match the color of the schema set forth by Department of Homeland Security,LF,NFR-LF
+49,1,If projected  the data must be readable.  On a 10x10 projection screen  90% of viewers must be able to read Event / Activity data from a viewing distance of 30,US,NFR-US
+50,1,The product shall be available during normal business hours. As long as the user has access to the client PC  the system will be available 99% of the time during the first six months of operation.,A,NFR-A
+51,1,If projected  the data must be understandable. On a 10x10 projection screen  90% of viewers must be able to determine that Events or Activities are occuring in current time from a viewing distance of 100,US,NFR-US
+52,1,The product shall ensure that it can only be accessed by authorized users.  The product will be able to distinguish between authorized and unauthorized users in all access attempts,SE,NFR-SE
+53,1,The product shall be intuitive and self-explanatory. 90% of new users shall be able to start the display of Events or Activities within 90 minutes of using the product.,US,NFR-US
+54,1,The product shall respond fast to keep up-to-date data in the display.,PE,NFR-PE
+55,1,The system shall have a MDI form that allows for the viewing of the graph and the data table.,F,FR-Data
+56,1,The system shall display Events in a vertical table by time.,F,FR-UI
+57,1,The system shall display the Events in a graph by time.,F,FR-UI
+58,1,The system shall display Events or Activities.,F,FR-UI
+59,1,The display shall have two regions:  left 2/3 of the display is graphical  right 1/3 of the display is a data table,F,FR-UI
+60,1,The data displayed in both the nodes within the graph and the rows in the table are MSEL Summary data,F,FR-Data
+61,1,The table side of the display shall be split into 2 regions: sequential and temporal.,F,FR-UI
+62,1,The top 1/4 of the table will hold events that are to occur sequentially.,F,FR-Data
+63,1,The bottom 3/4 of the table will hold events that occur according to its relevance to current time.,F,FR-Data
+64,1,The system shall color code events according to their variance from current time.,F,FR-Integration
+65,1,The system shall display data from the Sync Matrix 1.0 and Exercise Management Tool 1.0 applications,F,FR-Integration
+66,1,The system shall link Events back to either the Sync Matrix 1.0 or the Exercise Managment Tool 1.0 applications for modifications.,F,FR-Integration
+67,1,The system shall allow modification of the display.,F,FR-Integration
+68,1,The system shall offer a display of all the Events in the exercise.,F,FR-Integration
+69,1,The system shall filter data by: Venues and Key Events.,F,FR-Integration
+70,1,The system shall allow a user to define the time segments,F,FR-Integration
+71,1,The system shall display the local and exercise time in separate clocks,F,FR-UI
+72,1,The system shall offer the ability to pause and resume the refresh of data.,F,FR-Integration
+73,1,The system shall provide charts for the Activity or Event actual versus assumed time.,F,FR-Integration
+74,1,The system shall provide a history report of changes made to the Activity or Event data,F,FR-Integration
+75,2,The look and feel of the system shall conform to the user interface standards of the smart device.,LF,NFR-LF
+76,2,The user interface shall have standard menus buttons for navigation,LF,NFR-LF
+77,2,The system shall have a professional appearance,LF,NFR-LF
+78,2,The product shall have a consistent color scheme and fonts.,LF,NFR-LF
+79,2,The system shall be used by realtors with no training.,US,NFR-US
+80,2,The system shall be intuitive and self explanatory.,US,NFR-US
+81,2,The product shall be easy for a realtor to learn.,US,NFR-US
+82,2,The product shall use symbols and words that are naturally understandable by the realtor community.,US,NFR-US
+83,2,The product shall produce search results in an acceptable time,PE,NFR-PE
+84,2,The search results shall be returned no later 30 seconds  after the user has entered the search criteria,PE,NFR-PE
+85,2,The product shall generate a CMA report in an acceptable time.,PE,NFR-PE
+86,2,The CMA report shall be returned no later 60 seconds after the user has entered the CMA report criteria.,PE,NFR-PE
+87,2,The product shall synchronize contacts and appointments in an acceptable time.,PE,NFR-PE
+88,2,The product shall synchronize with the office system every hour.,PE,NFR-PE
+89,2,The product shall be available for use 24 hours per day 365 days  per year,A,NFR-A
+90,2,Out of 1000 accesses to the system the system is available 999 times.,A,NFR-A
+91,2,The product shall operate in offline mode whenever internet connection is unavailable.,FT,NFR-FT
+92,2,The product shall allow the user to view previously downloaded search results CMA reports  and appointments.,FT,NFR-FT
+93,2,The product shall retain user preferences in the event of a failure.,FT,NFR-FT
+94,2,100% of saved user preferences shall be restored when system comes back online.,FT,NFR-FT
+95,2,The product shall be able to support multiple remote users,SC,NFR-SC
+96,2,The product shall be able support 1000 simultaneous users.,SC,NFR-SC
+97,2,The product shall be capable of handling the existing 1000 users. This number is expected to grow 5 times within the next year.,SC,NFR-SC
+98,2,The product shall be installed by an untrained realtor without recourse to separately-printed instructions.,US,NFR-US
+99,2,90% of untrained realtors shall be able to install the product on their device without printed instructions,US,NFR-US
+100,2,The product is expected to run on Windows CE and Palm operating systems.,PO,NFR-PO
+101,2,Only registered realtors shall be able to access the system.,SE,NFR-SE
+102,2,Every user of the system shall be authenticated and authorized.,SE,NFR-SE
+103,2,The product shall prevent its data from incorrect data being introduced.,SE,NFR-SE
+104,2,The system shall allow a real estate agent to query MLS information,F,FR-Integration
+105,2,The user shall be able to get driving directions to a selected property,F,FR-UI
+106,2,The user shall be able to download appointments and contact information for clients,F,FR-UI
+107,2,The system shall display clear property images in the search results,F,FR-UI
+108,2,The system shall update or create new property listings in the MLS,F,FR-Integration
+109,2,Realtor shall be able to generate a CMA report based on property criteria,F,FR-UI
+110,2,The system shall be able to call the seller or buyer to schedule an appointment,F,FR-Integration
+111,2,The realtor shall be notified of new client appointments after automatic synchronization with office system,F,FR-Integration
+112,2,The realtor shall be able to retrieve a map showing property locations for a specified area,F,FR-Data
+113,2,The system shall notify the realtor when a seller or buyer responds to an appointment request,F,FR-Notification
+114,2,The product shall allow the user to save the property search results.,F,FR-Data
+115,3,The system shall be easy to use by the Program Administrators/Nursing Staff Members.,US,NFR-US
+116,3,All of the users shall be able to use the system after one day of training.,US,NFR-US
+117,3,The system shall help the user avoid making mistakes while scheduling classes and clinicals for the nursing students.,US,NFR-US
+118,3,The number of mistakes noted by the students shall be decreased by 50% in the first year.,US,NFR-US
+119,3,The system shall be intuitive to the Program Administrators/Nursing Staff Members.,US,NFR-US
+120,3,2 out of 3 Program Administrators/Nursing Staff Members shall successfully be able to use the system to manage the scheduling of classes and clinicals.,US,NFR-US
+121,3,The system shall use symbols and words that are naturally understandable by the user community.,US,NFR-US
+122,3,The verbiage used within the system shall be consistent with Standard English and the terminology of the national Nursing Community.,US,NFR-US
+123,3,Staff members shall be able to complete a set of tasks in a timely manner.,PE,NFR-PE
+124,3,The response time of general student management tasks shall take no longer than 5 seconds and the response time of schedule generation shall take no longer than 30 seconds.,PE,NFR-PE
+125,3,The system shall be available for use between the hours of 8am and 6pm.,A,NFR-A
+126,3,The system shall achieve 95% up time.,A,NFR-A
+127,3,system shall be able to handle all of the user requests/usage during business hours.,SC,NFR-SC
+128,3,The system shall cater to 10 simultaneous users from 9am to 5pm.,SC,NFR-SC
+129,3,The system shall be capable of processing 100% of nursing students and their classes for the next 10 years.,SC,NFR-SC
+130,3,The system shall be expected to manage the nursing program curriculum and class/clinical scheduling for a minimum of 5 years.,SC,NFR-SC
+131,3,The system shall able to operate within a business office environment typical of the Nursing Department at DePaul University.,O,NFR-O
+132,3,The system shall be used within the specifications defined by the computers used by the Program Administrators/Nursing Staff Members.,O,NFR-O
+133,3,The system shall operate within the Windows XP Professional operating system.,O,NFR-O
+134,3,The system shall interface with CampusConnect\92s central server,O,NFR-O
+135,3,The system shall interface with the faculty central server.,O,NFR-O
+136,3,The system shall interface with the student master server.,O,NFR-O
+137,3,We must be able to interface with any HTML browser.,O,NFR-O
+138,3,Only authorized users shall have access to clinical site information.,SE,NFR-SE
+139,3,Program Administrators/Nursing Staff Members are the only people who shall have access to clinical site details.,SE,NFR-SE
+140,3,Only authorized users shall have access to students\92 personal information.,SE,NFR-SE
+141,3,Dr Susan Poslusny and Dr Julie Donalek are the only people who shall have access to students\92 personal information.,SE,NFR-SE
+142,3,Only authorized users shall have access to the portion of the system that interfaces with CampusConnect.,SE,NFR-SE
+143,3,Fit Criterion: Dr Susan Poslusny and Karen Sysol are the only people who shall have access to the final class section scheduling for the system that interfaces with CampusConnect.,SE,NFR-SE
+144,3,The system shall have basic data integrity checking to reduce the possibility of incorrect or invalid data being introduced.,SE,NFR-SE
+145,3,The system shall protect private information in accordance with the organization\92s information policy.,SE,NFR-SE
+146,3,The system shall be built such that it is as secure as possible from malicious interference.,SE,NFR-SE
+147,3,The system shall use the organization\92s standard virus protection software to help monitor threats to itself.,SE,NFR-SE
+148,3,A cohort shall be associated to one Program of Study offered by the department.,F,FR-UI
+149,3,Program Administrators and Nursing Staff Members shall be able to add a listing of students to a cohort.,F,FR-UI
+150,3,Program Administrators and Nursing Staff Members shall be able to add a single student to a cohort,F,FR-UI
+151,3,Students added to a cohort shall be eligible for the cohort\92s Program of Study.,F,FR-UI
+152,3,Program Administrators and Nursing Staff Members shall be able to specify the preferred sequence of classes for a given cohort.,F,FR-UI
+153,3,For each class within a sequence for a cohort  Program Administrators and Nursing Staff Members shall be able to specify which quarter that class will be offered.,F,FR-UI
+154,3,Program Administrators and Nursing Staff Members shall be able to add new classes to a sequence of classes,F,FR-UI
+155,3,Program Administrators and Nursing Staff Members shall be able to add clinical classes or sections to a sequence of classes,F,FR-UI
+156,3,Program Administrators and Nursing Staff Members shall be able to add a new cohort to the system  identified by start month and year.,F,FR-Integration
+157,3,Program Administrators and Nursing Staff Members shall be able to add new classes for the nursing department into the system.,F,FR-Integration
+158,3,A class shall be either a non-clinical class or a clinical class.,F,FR-UI
+159,3,A non-clinical class shall specify the course name  lecture room requirements  and instructor needs.,F,FR-UI
+160,3,A clinical class shall specify the course name  lecture room requirements  clinical site needs  lecture instructor needs  and clinical lab instructor needs.,F,FR-UI
+161,3,Program Administrators/Nursing Staff Members shall be able to create a new Program of Study.,F,FR-UI
+162,3,A Program of Study shall consist of a program name and listing of required classes (both clinical and non-clinical) that must be completed.,F,FR-UI
+163,3,Program Administrators and Nursing Staff Members shall have the ability to specify which classes are required for a Program of Study,F,FR-UI
+164,3,The system shall be able to display a report of needed classes for a given quarter for all cohorts of all programs for Program Administrators/Nursing Staff Members\92 planning purposes.,F,FR-UI
+165,3,The report of needed classes shall include (but not be limited to) classes to be offered  number of sections needed  number of labs needed  and room types needed.,F,FR-UI
+166,3,Classes for a given cohort shall not conflict with regards to the time and day that they are offered.,F,FR-UI
+167,3,Program Administrators and Nursing Staff Members shall be able to add a new clinical site into the system.,F,FR-Integration
+168,3,Clinical site information shall include (but not be limited to) the name of the site  contact person  and contact information.,F,FR-UI
+169,3,Program Administrators and Nursing Staff Members shall be able to add a new clinical lab section for an existing clinical class into the System.,F,FR-Integration
+170,3,A clinical lab section shall include the clinical site name  the class  instructor  day and time of the lab.,F,FR-UI
+171,3,Program Administrators and Nursing Staff Members shall be able to add a student who has registered for a clinical class to a clinical lab section for that class.,F,FR-UI
+172,3,The system shall allow a Program Administrator or Nursing staff member to remove a student from a clinical lab section.,F,FR-Integration
+173,3,The system shall allow a Program Administrator/Nursing Staff Member to move a student from one clinical lab section to another clinical lab section corresponding to the same clinical class.,F,FR-Integration
+174,3,Program Administrators/Nursing Staff Members shall be able to cancel a clinical lab section only if there are no students registered for that clinical lab section.,F,FR-UI
+175,3,A Program Administrator/Nursing Staff Member shall be able to add a new nursing student to the system.,F,FR-Integration
+176,3,A staff member shall have the ability to manage the progress of a part time student  which includes modifying their sequence of classes and timeline of classes.,F,FR-UI
+177,3,The system shall be able to display a printable summary for individual cohorts  which will include the students enlisted  the Program of study  sequence of classes  cohort progress through the program  and timeline of completion.,F,FR-Integration
+178,3,The system shall be able to display a printable summary for individual clinical sites  which will include information on labs being held at that site for the given quarter (Clinical site  general information on labs held at that location  dates and times of all labs held there).,F,FR-Integration
+179,3,The system shall be able to display a printable summary for individual clinical labs  which will include (but not be limited to) class name  class number  lab section  listing of students enrolled  instructor  day(s)  time  and location.,F,FR-Integration
+180,3,The system shall be able to display a printable summary for individual nursing students  which will include (but not be limited to) student name  student ID  admission date  classes  credits  GPA  and the cohort that the student is enrolled in.,F,FR-Integration
+181,3,The system shall be able to display a printable summary of the system log.,F,FR-Integration
+182,3,The system shall contain contact information (e-mail and phone number) for all people relevant to the system  including (but not limited to) staff members  students  lecture instructors  clinical lab instructors  and clinical site administrators.,F,FR-Integration
+183,3,The system will use the stored e-mail addresses as a primary means of communicating information to affected parties.,F,FR-Integration
+184,3,The system will notify affected parties for routine communication purposes  including but not limited to informing students of upcoming offered classes (timeline) and what their schedule will be/shall be.,F,FR-Integration
+185,3,The system will notify affected parties when changes occur affecting clinicals  including but not limited to clinical section capacity changes  and clinical section cancellations.,F,FR-Integration
+186,3,The system will notify affected parties when changes occur affecting classes  including but not limited to class cancellations  class section detail changes  and changes to class offerings for a given quarter.,F,FR-Integration
+187,3,The system will notify affected parties when changes occur affecting cohorts  including but not limited to changes to the sequence for a cohort\92s program of study and changes to a given week\92s schedule (lab cancelled this week due to instructor illness).,F,FR-Integration
+188,3,The system will notify affected parties when changes occur affecting specific students  including but not limited to changing a student\92s status from full time to part time and moving a student to a different clinical section.,F,FR-Integration
+189,3,Program Administrators/Nursing Staff Members shall have the ability to modify information relating to cohorts including cohort identifier  program of study  preferred sequence of classes and quarters that a cohort will be taking specific classes.,F,FR-UI
+190,3,Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Program of Study within the Nursing Department including the Program of study name  and required classes for that Program of Study.,F,FR-UI
+191,3,Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Clinical Site  including the clinical site name  site contact person  contact information  and address.,F,FR-UI
+192,3,Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Clinical Lab Section  including the clinical site name the department/section for the lab  the class instructor day and time of lab and contact information.,F,FR-UI
+193,3,Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Nursing Student  including student ID  student name phone number e-mail status (full time or part time) and program of study.,F,FR-Notification
+194,4,The Disputes application shall comply with the corporate standards for user interface creation for internally and externally used applications.,LF,NFR-LF
+195,4,All screens created as part of the Disputes application must comply with corporate standards for interface creation.,LF,NFR-LF
+196,4,The list of dispute cases that are displayed after a search is performed must be color coded for easy identification of dispute cases based upon the dispute case status.,US,NFR-US
+197,4,100% of the cardmember and merchant services representatives shall use the Disputes application regularly after a 2-day training course.,US,NFR-US
+198,4,100% of cardmember services representatives shall be able to successfully create a dispute case on the first encounter after completing the training course.,US,NFR-US
+199,4,100% of merchant services representatives shall be able to successfully perform a follow up action on a dispute case on the first encounter after completing the training course.,US,NFR-US
+200,4,The maximum wait time for a user navigating from one screen to another within the Disputes application shall be no more than 5 seconds.,PE,NFR-PE
+201,4,The Disputes application shall support 350 concurrent users without any degradation of performance in the application.,PE,NFR-PE
+202,4, The Disputes application shall be available 24x7x365  with the exception of the following scheduled maintenance windows.  Monday \96 Saturday 3:00am to 4:00am EST Sunday 1:00amd to 5:00am EST,O,NFR-O
+203,4,The Disputes application shall interface with the Statement Database. The Statement Database provides the transaction details to the Disputes System. All transaction details must be obtained from the Statement Database,O,NFR-O
+204,4,The Disputes application shall interface with the Cardmember Information Database. The Cardmember Information Database provides detailed information with regard to a cardmember. All cardmember detail information must be obtained from the Cardmember Information Database.,O,NFR-O
+205,4,The Disputes applications shall interface with the Merchant Information Database. The Merchant Information Database provides detailed information with regard to the merchant. All merchant detail information shall be obtained from the Merchant Information Database.,O,NFR-O
+206,4,The Disputes application shall interface with the Letters application.  This will allow the Disputes application to request letters as part of the dispute initiation and dispute follow up process. All letter requests must be sent to the Print Letter Utility application.,O,NFR-O
+207,4,The Disputes application shall interface with the Cardmember Posting and Billing System.  This will allow the Disputes application to request adjustments to cardmember and merchant\92s accounts. All adjustment requests must be sent to the Cardmember Posting and Billing System.,O,NFR-O
+208,4,The Disputes application shall ensure that only users with the appropriate access level are allowed to initiate dispute requests.,SE,NFR-SE
+209,4,Only users with Update access must be able to initiate dispute requests.,SE,NFR-SE
+210,4,The Disputes application shall ensure that only authorized users are allowed to logon to the application.,SE,NFR-SE
+211,4,All authorized users  once authenticated must be able to logon to the Disputes System,SE,NFR-SE
+212,4,The Disputes System shall generate a User Report that details any new users that have been added and any changes to an existing user\92s access level. The report will be reviewed for auditing purposes.,SE,NFR-SE
+213,4,All additions of new users and modifications to user\92s access shall be recorded on the User Report.,SE,NFR-SE
+214,4,If a user account is revoked  it can only be re-instantiated by the System Administrator.,SE,NFR-SE
+215,4,Only the System Administrator shall be able to reset a revoked user logon account,SE,NFR-SE
+216,4,The Disputes application shall manipulate and view business data. Users will not have direct access to data files or databases.,SE,NFR-SE
+217,4,All updates to data files or database must be initiated from the Disputes System.,SE,NFR-SE
+218,4,The Disputes application must conform to the legal requirements as specified by the Merchant Operating Regulations.,L,NFR-L
+219,4,All business rules specified in the Disputes System shall be in compliance with the Merchant Operating Regulations.,L,NFR-L
+220,4,The Disputes application must conform to the legal requirements as specified by Regulation E and Regulation Z that govern credit card disputes processing.,L,NFR-L
+221,4,All business rules specified in the Disputes System shall be in compliance to the guidelines of Regulation E and Regulation Z.,L,NFR-L
+222,4,The Disputes application must maintain a detailed history of every action that a user takes on a dispute case.  This ensures a complete audit trail if questions arise later on with regard to a particular dispute case.,L,NFR-L
+223,4,All actions that modify an existing dispute case must be recorded in the case history.,L,NFR-L
+224,4,The Disputes System must be accessible by both internal and external users.,F,FR-Integration
+225,4,The Disputes System must prevent users from accessing any dispute cases that do not belong to their cardholder base.,F,FR-Integration
+226,4,The Disputes System will facilitate direct data entry of a dispute case via a user interface that supports real time responses to the users.,F,FR-Integration
+227,4,The Disputes System must provide different levels of access with regard to disputes case initiation and follow-up actions.,F,FR-Integration
+228,4,The Disputes System shall provide view access capability for authorized users of the application.,F,FR-Integration
+229,4,The Disputes System shall provide update access capability for authorized users of the application.,F,FR-Integration
+230,4,The Disputes System must allow the users to select disputable transactions (based on the age of the transaction) from a user interface and initiate a dispute (ticket retrieval request or chargeback notification) on the selected transaction.,F,FR-Notification
+231,4,The Disputes System must provide the user the ability to initiate a single dispute case on multiple transactions that belong to a single merchant.,F,FR-Integration
+232,4,The Disputes System will provide the user the ability to create or initiate a ticket retrieval request.   As part of ticket retrieval creation process the system must prompt the user to enter all the required information to create the ticket retrieval request.  The ticket retrieval request is a document that is sent to merchant inquiring the validity of a transaction.,F,FR-Integration
+233,4,The Disputes System must allow the user to create three unique types of ticket retrieval requests.  The three types of ticket retrieval requests are (1) Request for original receipt (2) Request for a copy of the receipt or (3) Request for a portfolio. A portfolio consists of documentation that would provide proof of a purchase such as the documentation that is received from a car rental agency that is more than a sales receipt.,F,FR-Integration
+234,4,The Disputes System must prevent external users from requesting original receipts. Requests for original receipts are restricted to internal users.,F,FR-Integration
+235,4,The Disputes System must provide a confirmation to the user upon the creation of ticket retrieval request that contains the following information; the dispute case number  the type of retrieval requested (copy  original or portfolio)  and the date that the merchant response is due.,F,FR-Integration
+236,4,The Disputes System shall allow the user to create or initiate a chargeback request.  The system must prompt the user to enter the required information to initiate a chargeback request. The chargeback request results in a printed chargeback notification that is sent to merchant indicating that their account will be charged back if no proof is provided that the disputed transaction is valid.,F,FR-Notification
+237,4,The Disputes System must provide a confirmation to the user upon the creation of a chargeback request. The confirmation must contain the following information; the dispute case number  the type of chargeback requested (pending or immediate)  and the date that the merchant response is due.,F,FR-Integration
+238,4,The Disputes System shall prevent the creation of duplicate dispute requests 100% of the time.,F,FR-Integration
+239,4,The Disputes System shall accurately provide a list of possible reason codes for a given transaction.  The list of possible reason codes must be derived based on the type of transaction and the industry that the merchant belongs to  according to the business rules defined for the Disputes System.,F,FR-Integration
+240,4,The Disputes System must provide the ability to view existing dispute cases.,F,FR-Integration
+241,4,The Disputes System must provide Search functionality.  The search method must include the ability to search by (1) the dispute case number  (2) the merchant account number  (3) the cardmember account number and (4) the issuer number.  In addition to the above criteria  the search functionality must further allow the user to limit the results of the search by a date range  the type of dispute (ticket retrieval request or chargeback notification)  the case status (open  closed or all) and the dispute reason code.,F,FR-Notification
+242,4,A list of all disputes cases that meet the entered search criteria must be provided to the user.  The list of cases must differentiate the type and/or status of the case by color -coding the line item in the list.  For example all open cases will be yellow and all closed cases will be gray.,F,FR-UI
+243,4,The Disputes System shall provide the users the ability to view the history of all activities that have occurred on the dispute case.,F,FR-Integration
+244,4,The Dispute System shall provide the users with the ability to follow up on a dispute case via follow-up actions.  The list of available follow up actions for a given dispute case must be filtered by the status of the case and the access level of the user.,F,FR-Integration
+245,4,The Disputes System shall record the name of the user and the date for any activity that creates or modifies the disputes case in the system.  A detailed history of the actions taken on the case  including the date and the user that performed the action must be maintained for auditing purposes.,F,FR-Integration
+246,4,For any systematic (non-user initiated) action that occurs on a case such as the disputes aging process  a case activity will be generated.  Upon the next logon the user that initiated the dispute case must be notified that a systematic action has occurred on the dispute case.,F,FR-UI
+247,4,All letter requests must be formatted according to guidelines specified by the Print Letter Utility system.,F,FR-Integration
+248,4,Any disputes cases that have been closed for over 6 months must be purged from the online disputes database.,F,FR-Data
+249,5,The product must support Internet Explorer 5.5 and above.,O,NFR-O
+250,5,The product must support Mozilla Firefox 1.0 and above.,O,NFR-O
+251,5,The product shall interface with the Choice Parts System.  This provides the feed of recycled parts data.,O,NFR-O
+252,5,The product shall run on the existing hardware for all environments.,O,NFR-O
+253,5,The product shall adhere to the corporate Architecture guidelines,O,NFR-O
+254,5,The product shall comply with corporate User Interface Guidelines,LF,NFR-LF
+255,5,The product shall comply with corporate color scheme,LF,NFR-LF
+256,5,The appearance of the product shall appear professional,LF,NFR-LF
+257,5,The product shall be easy to use by Adjusters and Collision Estimators.  95% of Adjusters and Collision Estimators shall find the product easy to use.,US,NFR-US
+258,5,The product shall increase productivity of Collision Estimators. 80% of the Collision Estimators shall agree their productivity has increase within 1 month of using the product.,US,NFR-US
+259,5,Users shall feel satisfied using the product.  85% of all users will be satisfied with the product.,US,NFR-US
+260,5,The product shall be easy to learn by Adjusters and Collision Estimators.  The product shall be learned with two days onsite training,US,NFR-US
+261,5,The user shall easily locate instructions while using the product.  User help can be found within 90% of the system.,US,NFR-US
+262,5,The search for recycled parts shall take no longer than 15 seconds.  The search results shall be returned in under 15 seconds.,PE,NFR-PE
+263,5,The search for the preferred repair facility shall take no longer than 8 seconds.  The preferred repair facility is returned within 8 seconds,PE,NFR-PE
+264,5,The recycled parts audit report shall be returned to the user within 10 seconds.  The audit report shall be returned within 10 seconds.,PE,NFR-PE
+265,5,The preferred repair facility ratings shall be saved within 5 seconds. The save shall occur within 5 seconds.,PE,NFR-PE
+266,5,The product shall adhere to the corporate online availability schedule.  The application is brought down only within 98% of the scheduled outages per the availability schedule.,A,NFR-A
+267,5,The product shall achieve a 98% uptime. The product shall not fail more than 2% of the available online time.,A,NFR-A
+268,5,The product shall be able to handle up to 1500 simultaneous users. The system shall perform with 1500 users as a time.,SC,NFR-SC
+269,5,The average number of recycled parts records per day shall be 50 000.,SC,NFR-SC
+270,5,The product shall be able to handle 10 000 concurrent users within 2 years of the initial launch.,SC,NFR-SC
+271,5,For estimators  the product shall be able to be operated in a repair facility during dirty and noisy conditions.,O,NFR-O
+272,5,The product shall interface with the ChoiceParts system once per day at approximately 1:00 AM.,O,NFR-O
+273,5,The maintenance of the product will fall within the established corporate maintenance windows.,O,NFR-O
+274,5,The product shall be supported using the corporate support center.,O,NFR-O
+275,5,Product installations and upgrades shall be handled by the middleware technology team within established launch time frames.,O,NFR-O
+276,5,Only adjusters can request recycled parts audit reports. No users without an adjuster role shall request recycled parts audits.,SE,NFR-SE
+277,5,Only adjusters with a supervisor role can update preferred repair facility ratings. Users without the supervisor role cannot access the repair facility ratings.,SE,NFR-SE
+278,5,Only collision estimators shall search for recycled parts.  Users without the collision estimator role shall not have access to the search for recycled parts.,SE,NFR-SE
+279,5,Only valid data shall be entered into the system. No invalid data shall be entered into the system.,SE,NFR-SE
+280,5,One insurance company shall not be able to view another insurance companys claim data.,SE,NFR-SE
+281,5,The product shall free of computer viruses.,SE,NFR-SE
+282,5,The system shall prevent malicious attacks including denial of service.,SE,NFR-SE
+283,5,The product must comply with Sarbanes-Oxley.,L,NFR-L
+284,5,The product shall comply with the estimatics laws relating to recycled parts usage.,L,NFR-L
+285,5,The product shall comply with insurance regulations regarding claims processing.,L,NFR-L
+286,5,The user shall search for the preferred repair facility using vehicle  vehicle location  and radius in miles,F,FR-UI
+287,5,The vehicle data shall include vehicle year make and model,F,FR-Data
+288,5,The vehicle location shall include street address city state and zipcode,F,FR-UI
+289,5,The system shall resolve the zipcode for the street address  city  and state if zipcode is unknown.,F,FR-Integration
+290,5,The search radius shall be between 1 and 30 miles,F,FR-UI
+291,5,The system shall locate the preferred repair facility with the highest ratings for the input criteria,F,FR-Integration
+292,5,The adjuster shall enter the preferred repair facility on the estimate assignment.,F,FR-UI
+293,5,The adjuster shall be able to override the preferred repair facitlity on the estimate assignment.,F,FR-UI
+294,5,The preferred repair facility shall be returned to the user.,F,FR-UI
+295,5,The system shall return a list of repair facilities within the radius if the preferred repair facility cannot be determined.,F,FR-Integration
+296,5,The estimator shall search for available recycled parts using damaged vehicle parts information.,F,FR-UI
+297,5,The estimator shall search for available recycled parts using a list of preferred parts suppliers.,F,FR-UI
+298,5,The system shall search for available recycled parts for the supplied vehicle parts and suppliers.,F,FR-Integration
+299,5,The estimator shall search by zipcode with a radius of 30 miles if no parts are found for the preferred parts suppliers,F,FR-UI
+300,5,The system shall retain the available recycled parts and suppliers returned from the search.,F,FR-Integration
+301,5,The available recycled parts information and their suppliers shall be returned to the user.,F,FR-UI
+302,5,The estimator shall apply selected recycled parts to the collision estimate.,F,FR-Logic
+303,5,The estimator shall not apply recycled parts to the collision estimate if no available parts are returned.,F,FR-Logic
+304,5,The adjuster shall review the collision estimate.,F,FR-UI
+305,5,The adjuster shall request a recycled parts audit of the collision estimate.,F,FR-Integration
+306,5,The recycled parts search results provided to the estimator shall be retrieved by the system.,F,FR-Integration
+307,5,The system shall generate an audit report based on the available recycled parts and the collision estimate.,F,FR-Integration
+308,5,The audit report shall include the total number of recycled parts used in the estimate.,F,FR-Logic
+309,5,The audit report shall include the number of available recycled parts from the original search results.,F,FR-UI
+310,5,The audit report shall include the percentage of available recycled parts used in the estimate ,F,FR-UI
+311,5,The audit report shall include the total score of the audit which sums the indivual line items.,F,FR-Logic
+312,5,The audit report shall be displayed to the user.,F,FR-UI
+313,5,The audit report shall be available to other adjusters at later points in time.,F,FR-UI
+314,5,The user shall select to view the preferred repair facility ratings.,F,FR-UI
+315,5,The current repair facility ratings shall be displayed to the user.,F,FR-UI
+316,5,The system will display a blank set of ratings if there are not ratings yet defined.,F,FR-UI
+317,5,The user shall enter new ratings based on the audit report,F,FR-UI
+318,5,The ratings shall be from a scale of 1-10,F,FR-UI
+319,5,The ratings shall include categories for attempted use of recycled parts and actual use of recycled parts,F,FR-UI
+320,5,The user shall select to save the preferred repair facility ratings.,F,FR-Data
+321,5,The preferred repair facility ratings shall be saved by the system.,F,FR-Integration
+322,6,The product must work with most database management systems (DBMS) on the market  whether the DBMS is colocated with the product on the same machine or is located on a different machine on the computer network.,O,NFR-O
+323,6,The product will function alongside server software on any operating system where the Java runtime can be installed.,O,NFR-O
+324,6,The product will require collaboration with a database management system (DBMS).  The DBMS may be located on the same machine as the product or on a separate machine residing on the same computer network.,O,NFR-O
+325,6,The product must make use of web/application server technology.  Open source examples include Apache web server  Tomcat  and the JBoss application server.,O,NFR-O
+326,6,A database management system such as Oracle  DB2  MySql or HSQL will need to be integrated with the product.,O,NFR-O
+327,6,The product\92s Look and Feel shall be able to incorporate aspects of the customer\92s organization such as logo  branding  and identity,LF,NFR-LF
+328,6,The product shall have a conservative and professional appearance.,LF,NFR-LF
+329,6,The product shall make the users want to use it. 80% of the users surveyed report they are regularly using the product after the first 2 weeks post-launch.,US,NFR-US
+330,6,The product shall be easy to use. 90% of users will be able to successfully reserve a conference room within 5 minutes of product use.,US,NFR-US
+331,6,The product shall give users feedback when necessary. 80% of the users surveyed report that the product accurately confirms their actions.,US,NFR-US
+332,6,The product shall allow the user to select a chosen language from one of the target market countries.,US,NFR-US
+333,6,The product shall allow for customization of start page and views preferences.,US,NFR-US
+334,6,An employee will be able to successfully use the product within a few minutes.  After informally navigating the product for less than 15 minutes  users shall be able to successfully setup meetings and reserve conference rooms.,US,NFR-US
+335,6,The product shall use a standard navigation menu familiar to most web users.,US,NFR-US
+336,6,The product shall allow for intuitive searching of available conference rooms.,US,NFR-US
+337,6,The product shall conform to the Americans with Disabilities Act.,US,NFR-US
+338,6,The response shall be fast enough to avoid interrupting the user\92s flow of thought.  90% of tasks shall complete within 5 seconds.  98% of tasks shall complete within 8 seconds.,PE,NFR-PE
+339,6,Aside from server failure  the software product shall achieve 99.99% up time.,A,NFR-A
+340,6,The product shall create an exception log of problems encountered within the product for transmission to our company for analysis and resolution.,FT,NFR-FT
+341,6,The product shall be capable of handling up to 1 000 concurrent requests.  This number will increase to 2 000 by Release 2.  The concurrency capacity must be able to handle peak scheduling times such as early morning and late afternoon hours.,SC,NFR-SC
+342,6,The product shall be able to process 10 000 transactions per hour within two years of its launch.  This number will increase to 20 000 by Release 2.,SC,NFR-SC
+343,6,The product shall be expected to operate for at least 5 years for each customer installation.,SC,NFR-SC
+344,6,The product shall be used in office environments.,O,NFR-O
+345,6,The product must be able to interface with any HTML browser.  The product shall transmit data between the user and the product without problems. The product shall display HTML properly in 80% of all HTML browsers tested (minimum is to test 8 browsers).,O,NFR-O
+346,6,The product must be able to interface with various database management systems. The product shall communicate successfully with the database management system on 100% of all transactions.,O,NFR-O
+347,6,The product must be able to interface with various email servers. The product shall be able to send email.,O,NFR-O
+348,6,The product shall be available for distribution via the Internet as a binary or ZIP file.,O,NFR-O
+349,6,The product shall be available for distribution as a packaged CD.,O,NFR-O
+350,6,The product will be available for licensing as a one-server  two-five servers  or five-or-more servers license.,O,NFR-O
+351,6,A new user must be able to be added to the system within 10 minutes. 90% of new users are able to log into the system within 10 minutes.,US,NFR-US
+352,6,The product must be designed using Design Patterns and coding best practices.  90% of maintenance software developers are able to integrate new functionality into the product with 2 working days.,MN,NFR-MN
+353,6,The product must be highly configurable for use with various database management systems for the end users.  80% of end users are able to integrate new database management systems with the product without changing the product\92s software code.,MN,NFR-MN
+354,6,Maintenance releases will be offered to customers once a year.  The releases shall take no longer than 5 minutes for 80% of the customer base to install.,MN,NFR-MN
+355,6,Every registered user will have access to the product\92s support site via the Internet.  70% of registered users shall find a solution to their problem within 5 minutes of using the support site.,US,NFR-US
+356,6,The customer shall be able to easily integrate new building maps with the product throughout the product\92s lifecycle.  Integration of new maps with the product shall be possible with little to no support from product support staff.,MN,NFR-MN
+357,6,The product shall be translated into foreign languages other than the target market countries\92 languages in future releases.  For each emerging target market  it shall take no more than 5 days to configure the product for that market\92s language.,US,NFR-US
+358,6,The product is expected to integrate with multiple database management systems. The product will operate with Oracle  SQL Server  DB2  MySQL  HSQL  and MS Access.,O,NFR-O
+359,6,The product shall be able to be installed in any operating environment within 2 days.,O,NFR-O
+360,6,The product shall ensure that only company employees or external users with company-approved user IDs may have product access.  100% of all logons shall be by either company employees or external users with company-approved user IDs.,SE,NFR-SE
+361,6,Only managers are able to perform search queries for reservations by user.  100% of all search queries for reservations by user shall be from logons of only management logons.,SE,NFR-SE
+362,6,The product shall ensure that the database\92s data corresponds to the data entered by the user.  Each conference room reservation in the system will contain the same information as was entered by the user.,SE,NFR-SE
+363,6,The product shall prevent the input of malicious data.  The product and/or adjacent hardware/software systems\92 data shall remain 100% uncorrupted each time malicious data is input into the product.,SE,NFR-SE
+364,6,The product and/or dependent databases/filesystems shall remain operational as a result of the input of malicious data.  The product and/or dependent databases/filesystems shall not crash 100% of the time that malicious data is input into the product.,FT,NFR-FT
+365,6,The product shall have the ability to receive automatic software updates as new threats emerge. 100% of customers will be able to receive automatic software updates transmitted to the installed product.,SE,NFR-SE
+366,6,The language of the product shall accommodate all of the target market countries. 90% of survey respondents from each target market country will find that the language of the product is acceptable.,SC,NFR-SC
+367,6,The product shall be able to display calendar dates and times according to the user\92s locale.  90% of survey respondents from each target market country will find that the date and time formatting of the product is correct.,US,NFR-US
+368,6,The product must be developed with the J2SE/J2EE programming language libraries,O,NFR-O
+369,6,The product shall record meeting entries.,F,FR-Data
+370,6,The product will notify employees of meeting invitations.,F,FR-Notification
+371,6,The product shall have the ability to send meeting reminders to employees.,F,FR-Notification
+372,6,The product shall assign the organizers contact information to each meeting they create.,F,FR-UI
+373,6,The product will record meeting acknowledgements.,F,FR-Data
+374,6,The product shall store new conference rooms.,F,FR-Data
+375,6,The product shall update existing conference rooms.,F,FR-Data
+376,6,The product will be able to delete conference rooms.,F,FR-Data
+377,6,The product shall be able to store new room equipment.,F,FR-Data
+378,6,The product will update existing room equipment.,F,FR-Data
+379,6,The product shall be able to delete room equipment.,F,FR-Data
+380,6,The product shall allow an organizer to invite other employees to meetings.,F,FR-UI
+381,6, Each time a conference room is reserved  the conference room schedule shall be updated to reflect the time and date of the reservation.,F,FR-UI
+382,6,The product shall record the transportation status of equipment reserved.,F,FR-Data
+383,6,The product shall display a map of the company building showing conference room locations.,F,FR-UI
+384,6,The product shall record updated meeting agendas.,F,FR-Data
+385,6,The product shall send a meeting confirmation to the meeting organizer.,F,FR-Notification
+386,6,The product shall display room equipment according to search parameters.,F,FR-UI
+387,6,The product shall display conference rooms according to search parameters.,F,FR-UI
+388,6,The product shall record different meeting types.,F,FR-Data
+389,6,The product shall record all the equipment that has been reserved.,F,FR-Data
+390,6,The product shall notify building personnel of equipment transport requests.,F,FR-Notification
+391,6,The product will allow priviledged users to view meeting schedules in multiple reporting views.,F,FR-UI
+392,6,The product shall be able to send meeting notifications via different kinds of end-user specified methods.,F,FR-Notification
+393,6,The product shall have a customizable Look and Feel.,F,FR-UI
+394,6,The product shall have an intuitive user interface.,F,FR-UI
+395,6,The product will display an available status for unreserved conference rooms.,F,FR-UI
+396,7,Recreation of Inventory Quantity Adjustment for the period of previous 30 days shall take no more than 30min.,PE,NFR-PE
+397,7,The System shall allow for a minimum of  6 users to work at the same time.,PE,NFR-PE
+398,7,The System shall utilize currently owned computer equipment.,O,NFR-O
+399,7,The System shall be able to automatically backup business data and restore them on demand.,O,NFR-O
+400,7,The System shall maintain consistent security.  Any changes in user passwords and/or permissions should take affect in all parts of the System.,SE,NFR-SE
+401,7,The System shall granularly control access rights to all major subsystems.  It should be possible to assign access rights to all subsystems independently.,SE,NFR-SE
+402,7,The System shall meet all applicable accounting standards.  The final version of the System must successfully pass independent audit performed by a certified auditor.,L,NFR-L
+403,7,The System shall not require additional third party licenses resulting in royalty fees.,O,NFR-O
+404,7,The System shall allow generation of Inventory Quantity Adjustment documents on demand.,F,FR-Integration
+405,7,The System shall allow on demand generation of all Inventory Quantity Adjustment documents since certain point of time.,F,FR-Integration
+406,7,The IQA subsystem shall take into account current inventory status and adjust inventory of substitutionary ingredients accordingly.,F,FR-UI
+407,7,The System shall allow entering  storing and modifying product formulas.,F,FR-Integration
+408,7,Product formulas shall allow use of semi-products  which have own formulas.,F,FR-Logic
+409,7,Product formula ingredients shall allow defining substitutionary ingredients.,F,FR-Logic
+410,7,Product formula substitutionary ingredients shall be entered automatically by the PFE subsystem.,F,FR-Logic
+411,7,Formula substitutionary ingredients shall be kept in persisted order,F,FR-Logic
+412,7,Product shall allow entering  storing and modifying product menus used by POS terminals.,F,FR-UI
+413,7,PME Subsystem shall allow building product menus based on the list of products kept in the accounting system.,F,FR-Integration
+414,7,PME Subsystem shall allow keeping submenus within menus and products within submenus in a managed and persisted order.,F,FR-UI
+415,7,PME Subsystem shall allow for a product to exist in more than one submenu,F,FR-UI
+416,7,The RMS System shall have Windows XP look and feel and use GUI futures making its use intuitive.,F,FR-UI
+417,7,The System shall generate Inventory Quantity Adjustment document based on product daily sales data and product formulas.,F,FR-Logic
+418,7,The System shall generate Inventory Quantity Adjustment document automatically when daily Product Sales data is available.,F,FR-Integration
+419,8,Administrator shall be able to activate a pre-paid card via the Administration section in under 5 seconds.,PE,NFR-PE
+420,8, Customer shall be able to check the status of their prepaid card  by entering in the PIN number  in under 5 seconds.,PE,NFR-PE
+421,8,System shall let customers register on the website as a \93pay as you go\94 user in under 5 minutes.,PE,NFR-PE
+422,8,System shall let customers register on the website as a \93unlimited movie subscriber\94 user in under 10 minutes.,PE,NFR-PE
+423,8,System shall let existing customers log into the website with their email address and password in under 5 seconds.,PE,NFR-PE
+424,8,System shall let customers cancel their account  process shall take no longer than 2 minutes.  Database will mark the account as inactive  and user will not be able to log into the website.,PE,NFR-PE
+425,8,System shall let administrator de-activate a customer account in under 1 minute. Customer will no longer be able to access the website.,PE,NFR-PE
+426,8,System shall let administrator add/remove movies on the website in under 5 minutes.  Entered movie information will be stored in the database and will now be available on the website.,PE,NFR-PE
+427,8,System shall let the administrator add/remove categories on the website in under 5 minutes.,PE,NFR-PE
+428,8,System shall let Izogn Manager access sales and usage statistics in under 2 minutes.,PE,NFR-PE
+429,8,System shall let administrators generate unique pre-paid pins in under 2 minutes and generate an Excel file with the generated PINs.,PE,NFR-PE
+430,8,The website shall be attractive to all audiences.  The website shall appear to be fun and the colors should be bright and vibrant.,LF,NFR-LF
+431,8,The website should have an African feel  but should not alienate non-Africans.  The website should use animation on pages which are describing the services  to grab the users attention and encourage them to sign up.,LF,NFR-LF
+432,8,The website design should be modern  clean  and concise.,LF,NFR-LF
+433,8,The product should be able to be used by 90% of novice users on the Internet.,US,NFR-US
+434,8,Users should only have to navigate through a maximum of 4 pages  to create an account with the website.,US,NFR-US
+435,8,Users should be able to access their streaming movies in under 2 clicks after logging into the website.,US,NFR-US
+436,8,An anonymous survey will show that 70% of customers are comfortable purchasing streaming movies after 2 weeks using the website.,US,NFR-US
+437,8,An anonymous survey will show that 95% of customers are comfortable using and purchasing pre-paid cards after a month of using the system.,US,NFR-US
+438,8,The product shall retain the customer\92s buying preferences and information.,US,NFR-US
+439,8,The product shall be easy for customers with novice skills on the  Internet to purchase and watch streaming movies.  Customers should be able to purchase and watch a pre-determined movie in under 3 minutes.,US,NFR-US
+440,8,The product shall use symbols and words that are naturally understandable by users familiar with websites,US,NFR-US
+441,8,The website will use standard Internet conventions when interacting with the user.,US,NFR-US
+442,8,Any interface between a user and the automated system shall have a maximum response time of 5 seconds  unless noted by an exception below.,PE,NFR-PE
+443,8,When purchasing a streaming movie or pre-paid card via credit card  the processing time should have a maximum response time of 15 seconds.,PE,NFR-PE
+444,8,When streaming a movie  the buffering time should take no longer than 10 seconds (plus any latency on the user\92s connection.),PE,NFR-PE
+445,8,While streaming a movie  buffering should only occur if there is latency in the user\92s connection.,PE,NFR-PE
+446,8,All credit card information will be secured on the server  and only accessible by authorized Izogn administrators.  Information will be encrypted in the database.,SE,NFR-SE
+447,8,The website shall be available for use 24 hours per day  365 days per year.,A,NFR-A
+448,8,The website shall achieve 99.5% up time.,A,NFR-A
+449,8,All movies shall be streamed on demand  at any time of the day.,A,NFR-A
+450,8,The website shall continue to operate if the streaming server goes down.,FT,NFR-FT
+451,8,The website shall continue to operate if the payment gateway goes down.,FT,NFR-FT
+452,8,The streaming server will support 50 simultaneous streaming connections.,SC,NFR-SC
+453,8,The streaming server will support a maximum of 700 movies; new servers can be added to support more movies.,SC,NFR-SC
+454,8,The server will support a maximum of 1 000 simultaneous users.,SC,NFR-SC
+455,8,The website shall be capable of supporting 100 000 customers.,SC,NFR-SC
+456,8,The product shall be expected to operate within the maximum maintenance budget for a minimum of 2 years.,MN,NFR-MN
+457,8,All aspects of the website shall be accessed by a web browser over the Internet.,O,NFR-O
+458,8,The same hardware supporting the current website will be used to support the new system.,O,NFR-O
+459,8,We must be able to interface with the following browsers: IE 5.X  6.0  Netscape 6.x  7.x  8.x and Firefox 1.0.,O,NFR-O
+460,8,Website must interface with the CyberSource API to process credit card transactions.,O,NFR-O
+461,8,Website must be fully operational with MSN TV2.,O,NFR-O
+462,8,Movies shall be encoded and streamed via Windows Media Player 9.0.,O,NFR-O
+463,8,Movies shall be encoded for 56k and 256k streams.,O,NFR-O
+464,8,Promotional updates to the website should take a day to update.,MN,NFR-MN
+465,8,Izogn Administrator must be able to update the category listings on the website within 2 minutes.,PE,NFR-PE
+466,8,Izogn Administrator must be able to add new products to the website within 2 minutes.,PE,NFR-PE
+467,8,The system will provide a 24 hour 800 toll free number for support to its customers.,A,NFR-A
+468,8,The website will provide a help section with answers and solutions to common problems.,US,NFR-US
+469,8,Velkat staff will be available for phone support between 7am-7pm  M-F to provide technical support to the Izogn administrators.,A,NFR-A
+470,8,The product shall be able to be installed in the specified environment within 1 working day.,O,NFR-O
+471,8,Only registered customers can purchase streaming movies.,SE,NFR-SE
+472,8,A customer can only stream a movie if they purchased it  and are within the 2 day viewing period.,SE,NFR-SE
+473,8,Only authorized personnel can access customer records in the database.,SE,NFR-SE
+474,8,Only administrators can activate a pre-paid card.,SE,NFR-SE
+475,8,Only authorized personnel can access sales information.,SE,NFR-SE
+476,8,The website shall prevent its data from being corrupted when incorrect data is entered in.,SE,NFR-SE
+477,8,The website shall protect itself from intentional abuse  and notify the administrator at all occurrences.,SE,NFR-SE
+478,8,Data integrity scripts will be run on a weekly basis to verify the integrity of the database.,SE,NFR-SE
+479,8,The website shall make its user aware of its information practices before collection data from them via a Privacy Policy  accessible on all pages of the website.,SE,NFR-SE
+480,8,The system shall notify customers of changes to its information policy.,SE,NFR-SE
+481,8,The system shall reveal private information only in compliance with the organization\92s information policy.,SE,NFR-SE
+482,8,All customer information will be stored on a secure database  accessible only to authorized personnel.,SE,NFR-SE
+483,8,All credit card information will be encrypted in the database.,SE,NFR-SE
+484,8,The streaming server will have anti-virus software to prevent infection of malicious viruses.,SE,NFR-SE
+485,8,The website should cater to all tribes in Nigeria.,LF,NFR-LF
+486,8,The website shall not be offensive to religious or ethnic groups.,LF,NFR-LF
+487,8,The website should appeal to all Africans  not only Nigerians.,LF,NFR-LF
+488,8,The website should use Flash to provide animation on the home page.,O,NFR-O
+489,8,IzognMovies shall meet the licensing requirements set forth by the appropriate organizations in order to stream African movies.,L,NFR-L
+490,8,The website will comply with W3C standards.,L,NFR-L
+491,8,The PHP code will comply with PEAR standards.,L,NFR-L
+492,8,The website will allow customers to search for movies by title  actor  or director.,F,FR-UI
+493,8,viewing a movie details the website will display the movies description actor and director entered in by the administrator.,F,FR-UI
+494,8,Website shall request  and authorize credit card payment before allowing a user to stream a movie.,F,FR-UI
+495,8,shall be able to stream purchased movie via Windows Media Player  for up to 2 days aftere purchase date.,F,FR-UI
+496,8,Website shall allow customers to browse movies by categories entered in by izogn administrator.,F,FR-UI
+497,8,Website shall allow customers to view reviews of selected movies by other customers.,F,FR-UI
+498,8,Website shall allow customers to add their own movie review for a selected movie.,F,FR-UI
+499,8,Website shall allow the Izogn administrator to approve a review posted by a customer.,F,FR-UI
+500,8,System will allow customers to pay for a streaming movie with a pre-paid card.,F,FR-Integration
+501,8,Website shall allow customers to purchase pre-paid cards of $5  $10  or $20 value either by credit card or mail-in payment option.,F,FR-Notification
+502,8,System shall automatically update the main page of the website every Friday  and show the 4 latest movies that have been added to the website.,F,FR-UI
+503,8,System shall allow users to update their billing and contact information via the \93My Account\94 section of the website.,F,FR-Integration
+504,8,Pre-paid cards shall be distributed via email or via a printed paper card.,F,FR-Notification
+505,8,Movies can only be streamed if the customer has purchased a movie  and is within the 2-day time period to stream the movie.,F,FR-UI
+506,8,Website must be able to support free trial periods with various parameters set by the Izogn Manager.,F,FR-UI
+507,8,All streaming movie sales will be logged in the database  and accessible by the administrator.,F,FR-Data
+508,8,All registered customer information shall be stored and maintained in the database  even after the customer cancels their account.,F,FR-Data
+509,8,Daily usage statistics should be logged  and accessible by the administrator.,F,FR-UI
+510,8,The owner shall have free access to all of the streaming movies.,F,FR-UI
+511,9,Total lead cycle time must be completed in 5 minutes for 90% of lead volume between the business hours of 8AM CST to 8PM CST; then 3 minutes for 99% of lead volume during off business hours.,PE,NFR-PE
+512,9,No lead evaluation will complete in a time period longer than 25 seconds for 97% of all leads processed.,PE,NFR-PE
+513,9,For leads that process longer than 25 seconds the system will record the event and duration,PE,NFR-PE
+514,9,The process must fit within the processing time conditions set forth by the Auto Rep Assignment process in which a lead is assigned within 3 minutes of the total life cycle.,PE,NFR-PE
+515,9,The lead washing process will operate within the established physical web service structure.,O,NFR-O
+516,9,The washing process must use a non binding  neutral data format  such as xml  when receiving and processing lead data.,O,NFR-O
+517,9,Defect reports will be available to technical units on a 24x7 basis.,A,NFR-A
+518,9,Washing parameters will be updated during scheduled maintenance hours.,MN,NFR-MN
+519,9,The vendor will verify the invalid lead.,F,FR-Logic
+520,9,Vendor will submit a credit validation record to be applied to the enterprise billing system.,F,FR-Integration
+521,9,If a lead is scored to the high range the system will supply the lead data and score to the enterprise system.,F,FR-Integration
+522,9,The leads washing functionality will validate all leads received by the web service for valid data,F,FR-Integration
+523,9,The leads washing functionality will insert all leads captured by the web service.,F,FR-Integration
+524,9,If the leads score falls within the high average score then it will be process by the ARA functionality.,F,FR-Logic
+525,9,If the leads score falls within the medium average then it will be set for manual verification by an Enrollment Coordinator through the eleads system.,F,FR-Integration
+526,9,If the leads score falls within the low average then it will be returned to the supplying vendor,F,FR-Logic
+527,9,The leads washing functionality will compile both contact and academic scoring information for a total score.,F,FR-Logic
+528,9,The leads washing functionality will use the parameters supplied by corporate and schools to score part of the lead.,F,FR-Logic
+529,9,The leads washing functionality will return the lead data supplied to the vendor along with the reason of rejection.,F,FR-Data
+530,9,The leads washing functionality will have an interface in which lead data parameters can be maintained.,F,FR-UI
+531,9,The leads washing functionality will verify the users authentication and rights to make parameter updates.,F,FR-Logic
+532,9,The leads washing functionality will store any potential lead duplicates returned by the enterprise system.,F,FR-Integration
+533,9,Prior to submitting the lead to the enterprise system the leads washing functionality will assign the lead to an admissions rep.,F,FR-Integration
+534,9,The leads washing functionality shall receive a period list of available reps from the enterprise system.,F,FR-Integration
+535,10,The product shall simulate the look of ships at sea.,LF,NFR-LF
+536,10,The product shall display the grids within a circle as a view from a periscope.,LF,NFR-LF
+537,10,The product shall display each type of ship in a grid using an image of the specific type of ship.,LF,NFR-LF
+538,10,When the offensive player takes a shot  the product shall simulate the sound of a ship at sea.,LF,NFR-LF
+539,10,When a shot is marked as a miss  the product shall simulate the sound of a shot missing its target.,LF,NFR-LF
+540,10,When a shot is marked as a hit  the product shall simulate the sound of a shot hitting its target.,LF,NFR-LF
+541,10,When a ship is sunk  the product shall simulate the sound of a sinking ship.,LF,NFR-LF
+542,10,The product shall be available 24 hours per day  seven days per week.,A,NFR-A
+543,10,The product shall able to handle a large number of games simultaneously.,PE,NFR-PE
+544,10,The response time shall be fast enough to maintain the flow of the game.  The response time shall be no more than 2 seconds for 95% of responses and no more than 4% for the remaining responses.,PE,NFR-PE
+545,10,The product shall protect the identity of the players. The product shall provide players no access to information that might reveal the identity of another player.,PE,NFR-PE
+546,10,The product shall be intuitive and self-explanatory.  Nine out ten users shall be able to successfully complete a game with no training.,US,NFR-US
+547,10,The product shall be available to players who understand English  Spanish and French.  The product shall allow the user to select the language upon accessing the product.,US,NFR-US
+548,10,The product shall provide players no access to information that might reveal the identity of another player,SE,NFR-SE
+549,10,The response time shall be fast enough to maintain the flow of the game. The response time shall be no more than 2 seconds for 95% of responses and no more than 4% for the remaining responses.,PE,NFR-PE
+550,10,The product shall maintain a list of players.,F,FR-UI
+551,10,The product shall allow a user to identify himself or herself as a player.,F,FR-UI
+552,10,Once a game has been initiated  the product shall make the players assigned to the game unavailable for selection from the list of players.,F,FR-UI
+553,10,The product shall allow a user to remove himself or herself from the list of players at any time.,F,FR-UI
+554,10,The product shall make inactive players unavailable for selection from the list of players.,F,FR-UI
+555,10,The product shall remove players who have been inactive for 24 hours from the list of players.,F,FR-UI
+556,10,The product shall allow a player to initiate a game by selecting another available player from the list of players.,F,FR-UI
+557,10,Once a game is initiated  the product shall display a defensive grid to each player,F,FR-UI
+558,10,Once a game is initiated  the product shall display an offensive grid to each player.,F,FR-UI
+559,10,The product shall prevent a player from viewing the offensive or defensive grids of the other player.,F,FR-UI
+560,10,Once a game is initiated  the product shall allow each player to position their 5 ships on their respective defensive grids.,F,FR-UI
+561,10,The product shall allow a player to position ships horizontally on their grid.,F,FR-UI
+562,10,The product shall allow the player to position ships vertically on their grid.,F,FR-UI
+563,10,The product shall allow the player to position ships diagonally on their grid,F,FR-UI
+564,10,The product shall prevent the player from overlapping ships on their grid.,F,FR-UI
+565,10,When both players have positioned their 5 ships on their defensive grids  the product shall define the status of each player for the first turn.,F,FR-UI
+566,10,For each turn  the product shall identify one player as offensive status and one player as defensive status.,F,FR-UI
+567,10,The product shall maintain the status of each player for a turn  either offensive or defensive.,F,FR-UI
+568,10,At the start of each turn  the product shall notify each player of his or her status.,F,FR-Notification
+569,10,For each turn  the product shall allow the offensive player to define a shot.,F,FR-UI
+570,10,For each shot  the product shall examine the defensive grid of the defensive player to determine whether the shot was a hit or miss.,F,FR-Logic
+571,10,For each shot  the product shall notify the players whether the shot was a hit or miss.,F,FR-Notification
+572,10,For each shot  the product shall mark the shot as a hit or miss on the defensive grid of the defensive player.,F,FR-UI
+573,10,For each shot  the product shall mark the shot as a hit or miss on the offensive grid of the offensive player.,F,FR-UI
+574,10,When the hit results in sinking a ship  the product shall notify the players that the ship was sunk.,F,FR-Notification
+575,10,When the hit results in sinking a ship  the product shall mark the ship as sunk on the defensive grid of the defensive player.,F,FR-UI
+576,10,When the hit results in sinking a ship  the product shall indicate the type of ship sunk on the defensive grid of the defensive player.,F,FR-UI
+577,10,When the hit results in sinking a ship  the product shall mark the ship as sunk on the offensive grid of the offensive player.,F,FR-UI
+578,10,If the shot was marked as a hit  the product shall allow the offensive player to define a shot.,F,FR-UI
+579,10,If the shot was marked as a miss  the product shall change the status of the offensive player to defensive,F,FR-UI
+580,10,If the shot was marked as a miss  the product shall change the status of the defensive player to offensive,F,FR-UI
+581,10,The product shall continue to assign turns until the game is ended.,F,FR-UI
+582,10,The product shall end a game when a hit by the offensive player results in sinking the last of the defensive player\92s ships  which had not been previously marked as sunk.,F,FR-UI
+583,10,The product shall allow a player to end a game at any time during the game.,F,FR-UI
+584,10,When a game is ended  the product shall notify the players that the game is ended.,F,FR-Notification
+585,10,The notification of the game ending will include the reason the game is ended (i.e.  a player has won the game or a player has ended the game).,F,FR-Notification
+586,10,When a game is ended  the product shall allow each player to identify himself or herself as an available player in the list of players.,F,FR-UI
+587,10,When a game is ended  the product shall allow each player to remove himself or herself from the list of players.,F,FR-UI
+588,11,The system shall be easy to use by callers and supervisors. Callers and supervisors must be able to accomplish any system task within 2 minutes.,US,NFR-US
+589,11,The system shall be easy to learn by callers and supervisors. Callers and supervisors shall learn how to use the system within 10 minutes.,US,NFR-US
+590,11,The system shall be responsive. At the DePaul TeleServices Center  when a supervisor uses the system to view a callers schedule  the system response time must be no more than 2 seconds 90% of the time and no more than 5 seconds the rest of the time.,PE,NFR-PE
+591,11,On a 56k connection  the system response time for all operations must be no more than 6 seconds 90% of the time.,PE,NFR-PE
+592,11,On a 112k connection or faster  the system response time for all operations must be no more than 3 seconds 90% of the time.,PE,NFR-PE
+593,11,The system shall have high availability every day of the year.The system must be available for use between 12:00AM and 6:00PM all days of the year.,A,NFR-A
+594,11,The system must be available for use between 7:00AM and 11:59PM all days of the year.,A,NFR-A
+595,11,The product shall be internet browser independent.The product must run using Internet Explorer and Netscape Navigator.,MN,NFR-MN
+596,11,The product shall ensure that only supervisors can advertise empty time slots.The product must ensure that supervisors are allowed to access advertise empty time slots.,SE,NFR-SE
+597,11,The product shall ensure that only supervisors can enter a caller\92s schedule.The product must ensure that supervisors are allowed to access advertise empty time slots.,SE,NFR-SE
+598,11,The product shall ensure that only supervisors can view schedule of all callers.The product must ensure that supervisors are allowed to access advertise empty time slots.,SE,NFR-SE
+599,11,The interface shall have a simple look. In the interface and usability survey  90% of beta testers must report that the interface is adequately simple.,LF,NFR-LF
+600,11,The interface shall be appealing to callers and supervisors. In the interface and usability survey  80% of beta testers must report that the interface is appealing.,LF,NFR-LF
+601,12,The product shall provide GUI based Monitoring Services.System Administrators shall monitor message exchanges will predict and determine problems and will also provide internal and external support.,LF,NFR-LF
+602,12,The product shall comply with City of Chicago Application Development Guide Framework.Application Development Framework will provide structured Graphical User Interface.,LF,NFR-LF
+603,12,The product shall provide Monitoring Services.The product shall be easy for System Administrators and DBAs to use after two weeks of usage.,US,NFR-US
+604,12,The product shall provide Error Tracking Services.The product shall help the System Administrators and DBAs to resolve transaction errors 99% of the time.,US,NFR-US
+605,12,The product shall provide Portals.The product shall help System Administrators to analyze the transactions with ad-hoc reporting and KPIs (Key Performance Indicators),US,NFR-US
+606,12,The product shall provide Asynchronous Messaging.The product shall provide asynchronous messaging to enable parallel processing and reduce the overhead in communications,PE,NFR-PE
+607,12,The product shall provide Multi-threading and Load Balancing.The product shall provide multi-threading technology as well as load balancing to overcome data load spikes and traffic.,PE,NFR-PE
+608,12,The product shall process messages within 2 seconds.The product shall have a maximum message processing time of 2 seconds,PE,NFR-PE
+609,12,The product shall poll the system for messages every second.The product shall poll the system for new messages at a maximum of every 1 second.,PE,NFR-PE
+610,12,The product shall provide Dynamic Change Support and Transparent resource addition.The product shall support Transparent Resource addition and Dynamic Change support to provide scalability and avoid service interruptions of more than 1 day.,PE,NFR-PE
+611,12,The product shall be available 99% of the time. Rationale: To avoid service interruption during busiest customer service response periods. The product shall be available 99.99% of the time for regular business days.,A,NFR-A
+612,12,The product shall be robust.The product shall have fault avoidance based on standards adoption.,FT,NFR-FT
+613,12,The product shall be robust with fault tolerance.The product shall have fault tolerance by using recovery technique compensatory transaction and routing around failures.,FT,NFR-FT
+614,12,The product shall be able to process all transactions.The product shall process minimum of 1 million transactions per year.,SC,NFR-SC
+615,12,The product shall be platform independent.The product shall enable access to any type of development environment and platform.,O,NFR-O
+616,12,The product shall interface CSR and Datastream.The product shall exchange messages between CSR and EAM on a real time basis without any direct interfaces between two systems.,O,NFR-O
+617,12,The product shall continue to operate during upgrade  change or new resource addition.The product shall be able to continue to operate with no interruption in service due to new resource additions.,MN,NFR-MN
+618,12,The product shall be updated on a regular basis.The product will have a new major feature introduced every six months and quarterly maintenance releases every six months.,MN,NFR-MN
+619,12,The product shall operate with every platform.The product shall accommodate any new technology without any change in its architecture.,MN,NFR-MN
+620,12,The product shall have security.The product shall provide authentication  and authorization.,SE,NFR-SE
+621,12,The product shall information Security. The product shall enable privacy by encryption WS-Security and Integrity Checking.,SE,NFR-SE
+622,12,The product shall have audit capabilities.The product shall store messages for a minimum of one year for audit and transaction tracking purposes.,SE,NFR-SE
+623,13,The system shall use IBM and CCR branding standards. The interface must have one IBM logo and one CCR logo.,LF,NFR-LF
+624,13,The system shall be displayable on any work computer a CCR user may have. The system interface shall be formatted to display at 800 by 600 pixel resolution.,LF,NFR-LF
+625,13,The system interface will use CCR nomenclature. The system must use the same nomenclature used in the existing WCS system and reports,LF,NFR-LF
+626,13,The interface must summarize the data in a fashion that\92s appealing to CCR management. Every report type must have at least one high level summary shown in the results dashboard/interface,LF,NFR-LF
+627,13,The system must use a point and click interface. 100% of all selection and navigation functionality must be able to be activated/selected by either a mouse or a keyboard,US,NFR-US
+628,13,The interface shall be easy to use. 90% of users should be able to successfully use the system to generate a report on their first use. The interface should adhere to IBM usability standards.,US,NFR-US
+629,13,Reports must be easy to generate. Reports must be generated within one button click and exported within one button click (after selecting the report),US,NFR-US
+630,13,A user shall be able to use the system without instruction after a short amount of time. After one use a user should understand and remember 90% of the system usage and navigation.,US,NFR-US
+631,13,All CCR users shall receive training before the WCS system is deployed. One training session will be held for 100% of CCR users before system deployment (based on a CCR user being available),US,NFR-US
+632,13,The WCS system shall use appropriate nomenclature and terminology as defined by the Corporate Community Grants organization. All interfaces and reports will undergo usability tests by CCR users.,US,NFR-US
+633,13,The WCS system shall be available at all times as long as IBM\92s internal intranet W3 is accessible. The WCS system will be available 95% of the time IBM\92s internal intranet W3 is available.,A,NFR-A
+634,13,The WCS system shall have the ability to connect other designated WCS databases currently not included in the system.,SC,NFR-SC
+635,13,The WCS system shall have the ability to include data for regions outside the United States and be accessed by users outside of the United States if approved by CCR management.,SC,NFR-SC
+636,13,The WCS system shall be run in a Windows environment. The WCS shall be accessed by users through the Internet on an IBM computer running a Windows 2000 or above operating system.,O,NFR-O
+637,13,The Brio portion of the WCS system must be able to export files in spreadsheet form (Microsoft Excel and Lotus 1-2-3 formats).  Brio will provide buttons in the user interface that produce/export reports in .xls or .123 file formats.,O,NFR-O
+638,13,The WCS system must run queries to the WCS databases once again (on a specified day) to update the available data available to CCR users. Queries must be made to external databases for data refresh once a week.,MN,NFR-MN
+639,13,All changes  updates  and additions to the WCS system shall be updated in the WCS Developer and WCS User Guides. Every change must be reflected in WCS system documentation,MN,NFR-MN
+640,13,The system shall only be accessed by authorized Corporate Community Grants (CCR) employees. Users must be authenticated using their IBM intranet user name and password.,SE,NFR-SE
+641,13,The WCS system shall not allow automatic logins by any user. Cookies containing WCS login information about a user will not be stored on a user\92s computer.,SE,NFR-SE
+642,14,Each team owner will need to use a username and password in order to be authenticated to reach the team owner\92s page,SE,NFR-SE
+643,14,The Commissioner will be the only authorized user per league to adjust league settings.,SE,NFR-SE
+644,14,Each page shall contain a navigation menu which shows the index into which the current page is contained.,LF,NFR-LF
+645,14,Each page shall contain a similar format with action items in one location and navigation buttons in a different location.,LF,NFR-LF
+646,14,The message board shall contain the 5 most recently posted messages on the league page. The messages will contain up to the first 150 characters of the message.,LF,NFR-LF
+647,14,A new user shall be able to navigate through the league and team pages within 30 seconds of reaching the start-up page.,US,NFR-US
+648,14,Users shall be able to reach the \91add\92  \91drop\92  and \91trade player\92 pages with one click from the team owner\92s page.,US,NFR-US
+649,14,Users shall be able to view at least 25 NFL player statistics and points on each page.,US,NFR-US
+650,14,The application shall ask the user to confirm dropping a player or trading a player before performing the action.,US,NFR-US
+651,14,The application shall be able to complete every user transaction within one fourth of a second of receiving the request over the network.,PE,NFR-PE
+652,14,The application shall have a downtime of at most 10 minutes per year.,A,NFR-A
+653,14,The application shall run on a web application server.,O,NFR-O
+654,14,A primary database will be used to store cached data for active users.,O,NFR-O
+655,14,A secondary database will be used to store historical statistics and data.,O,NFR-O
+656,14,Application updates shall occur between 3AM and 6 AM CST on Wednesday morning during the middle of the NFL season.,MN,NFR-MN
+657,14,New System version releases shall be released at the beginning of each NFL season.,MN,NFR-MN
+658,15,The RFS system should be available 24/7  especially during the budgeting period. The RFS system shall be available 90% of the time all year  and 98% during the budgeting period. 2% of the time  the system will become available within 1 hour of the time that the situation is reported.,A,NFR-A
+659,15,98% of the user workstations shall meet the minimum hardware requirements prior to implementation. Minimum Hard Disk Space:  400MB.,O,NFR-O
+660,15,98% of the user workstations shall meet the minimum software requirements prior to implementation: Microsoft Internet Explorer 5.0. Microsoft .NET Framework 1.1. Microsoft Internet Explorer Web Controls,O,NFR-O
+661,15,The RFS system should be able to easily interface with the BDW environment  in order to load the data. \95	7 data files shall be received from the BDW and loaded into the RFS system within 3 hours one day prior to the start of budgeting process  every year. The data will be as of October month-end. 	Test files (7) shall be loaded up to 5 times throughout the year  from the BDW.,O,NFR-O
+662,15,Changes to revenue and expense formulae must be applied to the RFS system  every year  prior to the budgeting process start. Revenue and expense formulae will be updated within one week of their receipt  after which 2 weeks will be allotted to testing of the budget calculations  to be conducted jointly by the project development team and PCG Finance.,MN,NFR-MN
+663,15,New branches/complexes/districts/regions and revenue/expense accounts added to the BDW  must be reflected in the RFS system. 100% of the entities (mentioned above) available as of October month-end  will be loaded into the RFS system  prior to the budget start process.,MN,NFR-MN
+664,15,Only authorized user shall access the RFS system. ONLY users that exist in the UAS system  with the RFS system assigned to their role(s)  shall access the RFS system and use it.,SE,NFR-SE
+665,15,User access should be limited to the permissions granted to their role(s) Each level in the PCG hierarchy will be assigned a role and users will be assigned to these roles. Access to functionality within RFS system is dependent on the privileges/permission assigned to the role..,SE,NFR-SE
+666,15,The product must comply with the intranet page standards and requirements of ENET Securities. 95% of the product look & feel will be approved by the Architecture group  prior to implementation. The remaining 5% will be corrected and approved within one month of product release.,LF,NFR-LF
+667,15,The intranet pages should display appropriately in all resolutions  from 800x600 and higher. The display of all the pages will be correct in 95% of the resolutions  prior to implementation. The remaining 5% will be corrected within a week of notification of the incorrect display.,LF,NFR-LF
+668,15,The users should be able to easily use the system to successfully complete their budgets  within the stipulated time for completion. With a week of training prior to product implementation  98% of the users shall complete their budgets within the stipulated time.,US,NFR-US
+669,15,The product interface should be fast. The response time of the product interface should not exceed 2 seconds 90% of the time. For 10% of the time  the response time should not be more than 10 seconds.not be more than 10 seconds.,PE,NFR-PE
+670,16,The system shall operate on Unix and Windows operating systems.,PO,NFR-PO
+671,16,The system shall be evoked by typing âpineâ into a command or shell prompt.,O,NFR-O
+672,16,The system shall use the SMTP mail protocol.,O,NFR-O
+673,16,The system shall support the ability to perform a send and receive operation.,F,FR-Integration
+674,16,The system shall support the ability to perform a send only operation.,F,FR-Integration
+675,16,The system shall support the ability to perform a receive only operation.,F,FR-Integration
+676,16,The system shall use a text-based interface to display a listing of available mail.,LF,NFR-LF
+677,16,The system shall have a help system that offers tips and explanation for each screen and each item on the screens upon demand.,US,NFR-US
+678,16,The system shall display and embed in each message a date/timestamp of when the message was sent.,F,FR-Notification
+679,16,The system shall allow a text search that users may use to find mail messages.,F,FR-Notification
+680,16,The system search feature should support the use of regular expressions in search.,F,FR-Integration
+681,17,The system shall provide an option to withdraw money.,F,FR-Integration
+682,17,The system shall query the user for the amount of money.,F,FR-Integration
+683,17,The system shall query the user for the account type.,F,FR-Integration
+684,17,The system shall validate the amount is available in the userâs account before releasing funds to the user.,F,FR-Integration
+685,17,The system shall validate the amount is a multiple of $20.,F,FR-Integration
+686,17,The system shall debit the userâs account upon withdrawal of funds.,F,FR-Integration
+687,17,The system shall be able to issue a specific amount of money to the user.,F,FR-Integration
+688,18,The meeting scheduler system shall be able to select a participant as an important participant.,F,FR-Integration
+689,18,The meeting scheduler system shall cancel a meeting due to canceling of an important participant.,F,FR-Integration
+690,18,The meeting scheduler system shall reschedule a meeting to support conflict resolutions.,F,FR-Integration
+691,18,The meeting scheduler shall be accessed from the Web.,O,NFR-O
+692,18,The meeting scheduler system may (optionally) automatically propose another meeting if current meeting is canceled by an important participant.,F,FR-Integration
+693,18,The meeting scheduler system may provide the âmeeting initiatorâ a summary of the scan of âpotential meeting participantsâ showing available âtime slotsâ and schedule conflicts as a means of informing the âmeeting initiatorâ of the overall results of the system.,F,FR-Integration
+694,18,The meeting scheduler system may be able to include an agenda for a meeting proposal.,F,FR-Integration
+695,18,The meeting scheduler system may suggest a âvirtual meetingâ for available âtime slotsâ if no location is available or feasible for the meeting.,F,FR-Integration
+696,18,The meeting scheduler system may be able to include a list of required equipment for a meeting proposal.,F,FR-Integration
+697,18,A meeting scheduler system will temporarily reserve the âtime slotsâ for the proposed meeting.,F,FR-Integration
+698,18,A meeting scheduler system will inform the âpotential meeting participantâ of the meeting.,F,FR-Integration
+699,19,The system must be easy to use by both managers and chefs such that they do not need to read an extensive amount of manuals.,US,NFR-US
+700,19,The system must be quickly accessible by both managers and chefs.,US,NFR-US
+701,19,The system must be intuitive and simple in the way it displays all relevant data and relationships.,US,NFR-US
+702,19,The menus of the system must be easily navigable by the users with buttons that are easy to understand.,US,NFR-US
+703,19,All the functions of the system must be available to the user every time the system is turned on.,A,NFR-A
+704,19,The calculations performed by the system must comply according to the norms set by the user and should not vary unless explicitly changed by the user.,L,NFR-L
+705,19,The client should agree to EULA before using our software.,L,NFR-L
+706,20,All Web pages generated by the system shall be fully downloadable in no more than 10 seconds over a 40KBps modem connection.,PE,NFR-PE
+707,20,Responses to queries shall take no longer than 7 seconds to load onto the screen after the user submits the query.,PE,NFR-PE
+708,20,The system shall display confirmation messages to users within 4 seconds after the user submits information to the system.,PE,NFR-PE
+709,20,All network transactions that involve financial information or personally identifiable information shall be encrypted.,SE,NFR-SE
+710,20,Users shall be required to log in to the Cafeteria Ordering System for all operations except viewing a menu.,F,FR-Integration
+711,20,Patrons shall log in according to the restricted computer system access policy.,SE,NFR-SE
+712,20,The system shall permit only cafeteria staff members who are on the list of authorized Menu Managers to create or edit menus.,F,FR-Integration
+713,20,Only users who have been authorized for home access to the corporate Intranet may use the COS from non-company locations.,SE,NFR-SE
+714,21,Programmers and application developers will have access to source code to address bugs or system enhancements as deemed necessary. Network Administrator and DBA support is also required to maintain a 24x7 system uptime.,A,NFR-A
+715,21,System security and access levels are provided in the online system. There are varying levels of system access and functional authority. Each studentâs access is limited to his/her own registration records. Only authorized system administrator(s) has access to all student registration records.,SE,NFR-SE
+716,21,The online registration system is âself-service styleâ system that shall initially address the student registration needs.,F,FR-Integration
+717,22,All data entry forms for the application should match their Microsoft Excel hardcopy counterparts as closely as possible. Hardcopies of these forms were provided to the design team during the second requirements interview.,O,NFR-O
+718,23,95% of users will not need to read the user manual to be able to use the application.,US,NFR-US
+719,23,Changes made to the Manage My ID website can be adopted without altering the iOS application.,MN,NFR-MN
+720,24,The application should be connected to the Internet.,A,NFR-A
+721,24,The application should be connected to the GPS device.,A,NFR-A
+722,24,The application should be easy to extend. The code should be written in a way that it favors implementation of new functions.,MN,NFR-MN
+723,24,Test environments should be built for the application to allow testing of the applications different functions.,MN,NFR-MN
+724,24,The application should be portable with iOS and Android.,PO,NFR-PO
+725,25,The system shall show a tabbed display (or equivalent functionality) with the campus map on one tab and info on the most recently announced building on the other.,LF,NFR-LF
+726,25,The system shall allow the user to scroll the campus map from the campus map tab.,US,NFR-US
+727,25,The campus map shall provide visual clues regarding what areas have prepared audio and therefore may be selected.,LF,NFR-LF
+728,25,The campus map shall have a pause/resume button. The pause and resume button will allow the user to scroll and select other buildings without being interrupted by the automatic search and announce feature.,LF,NFR-LF
+729,25,The system shall provide a way to return to the startup screen.,US,NFR-US
+730,26,It should generate a report about registered complaint to the admin and response report to the user who has submitted his queries.,F,FR-Data
+731,26,The system should maintain correct schedules of labs and the documentation of all the lab equipment.,F,FR-Integration
+732,27,The system should use the company colors and logos.,LF,NFR-LF
+733,27,The system shall be capable of restoring itself to its previous state in the event of failure (e.g. a system crash or power loss).,FT,NFR-FT
+734,27,The system shall be able to display a menu at all times to facilitate manual order taking should the need arise.,LF,NFR-LF
+735,27,The system shall utilise periodic 30-second keep-alive messages between tablets and the server to monitor tablet operational status.,O,NFR-O
+736,27,The system shall flag tablets that fail to send timely keep-alive messages as non-operational and disassociate the assigned waiter from the tablet.,FT,NFR-FT
+737,27,A waiter password used for tablet login must have a bit-strength of at least 64 bits.,SE,NFR-SE
+738,27,A waiter password used for tablet login must be changed every three months.,SE,NFR-SE
+739,27,A waiter shall only be able to log into one tablet at any given instance of time.,SE,NFR-SE
+740,27,A waiter that attempts to log into a second tablet while already logged into another tablet shall be rejected and notified through both tablets.,SE,NFR-SE
+741,27,A display shall not require a user to log in.,SE,NFR-SE
+742,27,A surface computer shall not require a user to log in.,SE,NFR-SE
+743,27,A tablet shall require a user to log in using a username and password.,SE,NFR-SE
+744,28,The system will fully function in major browsers.,PO,NFR-PO
+745,28,The system will support mobile users in some way.,PO,NFR-PO
+746,29,Responses to view information shall take no longer than 5 seconds to appear on the screen.,PE,NFR-PE
+747,29,The system shall accommodate large data items without fault.,FT,NFR-FT
+748,29,System will use secured database.,SE,NFR-SE
+749,29,Unauthorised users can only read data without modifying anything.,SE,NFR-SE
+750,29,ABS shall handle all expected and unexpected errors in ways that prevent loss in information and long downtime period.,FT,NFR-FT
+751,30,Authenticate and Login user to the web app.,F,FR-Integration
+752,30,Enable new users to register to the tech support system.,F,FR-Integration
+753,30,Enable a registered user to change his password if he forgets his password.,F,FR-UI
+754,30,Enable a registered user to view his profile. Additional information viz. questions asked by him and answers posted by him are also displayed.,F,FR-UI
+755,30,Enable a user to view questions and their corresponding answers.,F,FR-UI
+756,30,Enable a logged in user to ask questions.,F,FR-UI
+757,30,Enable a logged in user to post answers.,F,FR-UI
+758,30,Enable a logged in user to up vote and down vote answers.,F,FR-UI
+759,30,Provide an interface for the admin to approve posts so that posts are not visible without admin approval.,F,FR-UI
+760,30,Enable the admin to generate reports which contains all the posts and their corresponding replies.,F,FR-UI
+761,30,Information transmission should be securely transmitted to server without any changes in information.,SE,NFR-SE
+762,30,Be intuitive even to first time users,LF,NFR-LF
+763,31,Flea Market system will interface with the web server and RDBMS software using APIs provided by the implementation language,O,NFR-O
+764,31,All transactions at the Flea Market require a valid user ID and password.,SE,NFR-SE
+765,31,Secure data transfer over the Internet could be provided using SSL encryption that will be configured by the host system administrator.,SE,NFR-SE
+766,31,The IP addresses where the transaction was made from will be logged.,SE,NFR-SE
+767,31,User passwords will be stored in the database in an encrypted format.,SE,NFR-SE
+768,31,Most of the system functions will be controlled using the administrative interface.,F,FR-Integration
+769,31,Detailed documentation of the code and SRS will enable easy maintenance of the Flea Market.,MN,NFR-MN
+770,32,Information recorded must include an optional field for context.,F,FR-Data
+771,32,Information should be tagged according to who is entering the data.,F,FR-Data
+772,32,It must be able to download the most recent medical record.,F,FR-Data
+773,32,It must store the most recent copy of information in its application data folder.,F,FR-Data
+774,32,It must only update the parts that have changed when connecting to the server.,O,NFR-O
+775,32,It must be able to change and update information on the server.,O,NFR-O
+776,32,The application must log the user out when it is exited.,SE,NFR-SE
+777,32,A correct combination of username and password is required for a user to login.,SE,NFR-SE
+778,32,It should give a drill-down view of all data in the medical record after logging in.,LF,NFR-LF
+779,32,The user must be able to set an option to hide information based on who has tagged it.,F,FR-UI
+780,32,The user must be able to add photos from his/her photo library to his/her medical record.,F,FR-Data
+781,32,It must allow a user to login.,F,FR-UI
+782,32,It must allow a user to logout.,F,FR-UI
+783,32,All information must be viewable on the website.,F,FR-UI
+784,32,All information must be updatable on the website.,F,FR-UI
+785,32,It must allow a user to download a backup of their medical information.,F,FR-Data
+786,32,Logout must be automatic after 1 hour of inactivity.,SE,NFR-SE
+787,32,Full data backups must be created daily.,SE,NFR-SE
+788,32,A user must be logged on to be able to view or edit any medical information.,F,FR-UI
+789,32,Each account must securely store all of its data.,SE,NFR-SE
+790,32,Each account must have a separate identifying account number.,F,FR-UI
+791,33,The system shall allow user to choose filling that they want.,F,FR-Integration
+792,33,The system shall allow user to choose their preferable topping.,F,FR-Integration
+793,33,The system shall allow user to decorate their doughnut.,F,FR-Integration
+794,33,The system shall give the user an opportunity for the user to choose the selection of doughnut provided.,F,FR-Integration
+795,33,The system should take the customer name.,F,FR-Integration
+796,33,The system should keep the customer contact number.,F,FR-Integration
+797,33,The system should keep the customer email.,F,FR-Integration
+798,33,The system should ask the user to key in the pickup date.,F,FR-Integration
+799,33,The system should require the user to state time when should the doughnut be delivered.,F,FR-Integration
+800,33,The system should have to keep the location where the doughnut will be send.,O,NFR-O
+801,33,The website is available whenever the users want to use it.,A,NFR-A
+802,34,The system use SSL (secured socket layer) in all transactions that include any confidential customer information.,SE,NFR-SE
+803,34,The system must automatically log out all customers after a period of inactivity.,SE,NFR-SE
+804,34,The system should not leave any cookies on the customerâs computer containing the userâs password.,SE,NFR-SE
+805,34,The systemâs back-end servers shall only be accessible to authenticated administrators.,SE,NFR-SE
+806,34,Sensitive data will be encrypted before being sent over insecure connections like the internet.,SE,NFR-SE
+807,34,The system provides storage of all databases on redundant computers with automatic switchover.,O,NFR-O
+808,34,The reliability of the overall program depends on the reliability of the separate components. The main pillar of reliability of the system is the backup of the database which is continuously maintained and updated to reflect the most recent changes.,FT,NFR-FT
+809,34,An end-user may use this system on any OS; either it is Windows or Linux.,PO,NFR-PO
+810,35,The logo and the current basic design of registration system should be displayed. The system should be attractive according to the clients. The design and the color should make users feel comfortable when using the system instead of flashing useless colors on the screen. The design should also reflect the seriousness of the environment.,LF,NFR-LF
+811,35,The system should be able to manage all the information incoming from the database and the catalogue.,O,NFR-O
+812,35,The product is Web based therefore it will be used in any environment that allows Web access.,PO,NFR-PO
+813,35,For the system to successfully operate the registration system should be integrated with other IT services and the portal.,O,NFR-O
+814,35,The system should need to be entirely self-supporting since the users would be using it only to register courses.,US,NFR-US
+815,35,The Web interface should be compatible with standards in order to be usable via all major Web browsers in a wide variety of environments.,PO,NFR-PO
+816,35,Everyone (stakeholders and guests) can have access to the system and the catalogue. Every client must have secure and private access to his/her data. The  and the service man can have access to every part of the system. All these accesses (except the âguest tourâ access) require identification through ID and password.,SE,NFR-SE
+817,35,The system will develop a security system that will reduce to the minimum the possibility of corruption from systems and/or humans.,SE,NFR-SE
+818,36,The Operational Interface shall have a Mean Time Between Failures of no less than 7 days.,FT,NFR-FT
+819,36,The system shall be available 99.5% of the time.,A,NFR-A
+820,36,The software system needs a robust security mechanism in place so that unauthorized users are not allowed access to parts of the system.,SE,NFR-SE
+821,36,Each user shall either be trusted or not trusted.,SE,NFR-SE
+822,36,All source code and development related documents shall be controlled under a version control system.,MN,NFR-MN
+823,36,All source code shall adhere to an agreed upon and well-defined set of coding standards for each development language used.,MN,NFR-MN
+824,36,Since the software must run on several popular hardware platforms and the goal is to achieve a reasonable level of platform independence.,PO,NFR-PO
+825,37,High level of performance requires high speed network and high level of connectivity.,PE,NFR-PE
+826,37,The available server must be reliable and the network connectivity in the supermarket should be proper for smooth flow of all operations and data.,O,NFR-O
+827,37,Every user of the software is provided a unique login ID and a password which is stored in the database hashed by SHA2 algorithm.,SE,NFR-SE
+828,37,The software is available for use from the supermarket opening time to the closing time.,A,NFR-A
+829,38,The system shall accommodate high number of items and users without any fault.,FT,NFR-FT
+830,38,System use shall not cause any harm to human users.,SE,NFR-SE
+831,38,System will use secured database,SE,NFR-SE
+832,38,Normal users can just read information but they cannot edit or modify anything except their personal and some other information.,SE,NFR-SE
+833,38,System will have different types of users and every user has access constraints.,SE,NFR-SE
+834,38,Control the database and keep track of all records of customers and employee details.,F,FR-Data
+835,38,Contact with the vendors and give permission to sell their product under the site after testing the productâs quality.,F,FR-UI
+836,38,View the details of all employees and control the whole site.,F,FR-UI
+837,38,Customers must have a valid login id to enter into the site.,SE,NFR-SE
+838,38,New users can sign up by creating new ID.,F,FR-UI
+839,38,Can view all available products and can compare them and make a choice for purchasing products.,F,FR-UI
+840,38,Can purchase any product through valid credit card.,F,FR-UI
+841,38,Can give feedback to the 24X7 Customer Care Service center about their impression for the site and services.,F,FR-Integration
+842,38,Customer must logout of the site after purchasing products.,F,FR-UI
+843,38,Can only visit the site without registration.,F,FR-UI
+844,38,Vendors must take permission from the Administrator for selling their products under the site. Administrator will test productâs quality according to its market price to permit vendor for selling purpose.,F,FR-UI
+845,38,Can consult with the Administrator regarding productâs quality and advertisements.,F,FR-UI
+846,38,View the personal details of the customer.,F,FR-UI
+847,38,Responsible for properly allocating the selected product according to the customerâs choice and delivering product to the customer.,F,FR-UI
+848,38,Keep track of each product itemâs stocks for selling purpose.,F,FR-UI
+849,38,Responsible for informing administrator when any product itemâs stock goes under the minimum level.,F,FR-UI
+850,38,Taking permission from the Administrator for the product to be purchased from vendor.,F,FR-UI
+851,38,Responsible for managing stocks of each product items.,F,FR-UI
+852,38,Keep track of all the payment transactions made by the customers and update the payment information.,F,FR-Data
+853,38,Responsible for contacting the banks for the validation of the a/c number provided by the customer while purchasing and make the transaction from the given a/c.,F,FR-Logic
+854,38,Consult with the Administrator about the payment details of the customers for the updating of the database.,F,FR-Data
+855,38,Provide feasible solutions to the customers on their complaints and queries.,F,FR-Data
+856,39,The system should require the user to state time when should the doughnut be delivered,F,FR-Integration
+857,40,The system is expected to have reasonable short time response. The voter should be able to login and should be able to get response for his requests in 2-3 seconds.,PE,NFR-PE
+858,40,The data transaction between client and server must be encrypted using SSL technology.,SE,NFR-SE
+859,40,All the passwords that are generated or accepted must be stored in database in an encrypted form.,SE,NFR-SE
+860,40,To prevent attacks the system should generate random word and ask the user to enter it correctly for multiple tryings.,SE,NFR-SE
+861,40,The system should warn ECA users about the malfunction of the system.,FT,NFR-FT
+862,40,The system should be simple to use,LF,NFR-LF
+863,42,The physician/pharmacist must have a valid user login to access the system.,F,FR-Integration
+864,42,A failed login will alert the physician/pharmacist.,F,FR-Notification
+865,42,A list of available patients is displayed after login.,F,FR-UI
+866,42,An error message alerts when an invalid patient is entered.,F,FR-Notification
+867,42,Backspace/reset capability is implemented for typing errors.,F,FR-UI
+868,42,Selected or specified patientâs information is loaded.,F,FR-UI
+869,42,Return to List is available if the patient loaded is not correct.,F,FR-UI
+870,42,Navigation to each selected tab.,F,FR-UI
+871,42,The font will be larger enough for easy reading.,F,FR-UI
+872,42,Icons will clearly illustrate the feature it represents.,F,FR-UI
+873,42,Basic Patient information is showed first.,F,FR-UI
+874,42,Customized information is displayed.,F,FR-UI
+875,42,Each entry is shown in full.,F,FR-Data
+876,42,The text and time/date of a note that has been entered is displayed starting with most recent.,F,FR-UI
+877,42,New and Delete buttons will allow the physician/pharmacist to add a notation to the patientâs file.,F,FR-Data
+878,42,A description and time/date of each prescription that has been ordered or given is displayed starting with most recent.,F,FR-UI
+879,43,All users of the system shall login using some form of unique identification.,SE,NFR-SE
+880,43,All login attempts shall be done so in a secure manner.,SE,NFR-SE
+881,43,The system shall be compatible with the Microsoft Windows Operating System.,O,NFR-O
+882,45,The system shall allow the administrator to remove equipment.,F,FR-Integration
+883,45,The system shall allow the administrator to install additional distributed location templates.,F,FR-Integration
+884,45,The system shall allow the administrator to remove physical locations.,F,FR-Integration
+885,45,The system shall allow administrators to define negotiation rules for the organization.,F,FR-Integration
+886,45,The system shall give the mediator privileges to schedule location and equipment resources.,F,FR-Integration
+887,45,The system shall allow the mediator to negotiate a meeting date.,F,FR-Integration
+888,45,The system shall allow the mediator to solve a date conflict.,F,FR-Integration
+889,45,The system shall allow the mediator to negotiate a location / equipment.,F,FR-Integration
+890,45,The system shall allow the mediator to solve a location conflict.,F,FR-Integration
+891,45,The system shall allow the mediator to send and receive messages from users.,F,FR-Notification
+892,45,The system shall allow the initiator to view the information of any meetings which they initiated.,F,FR-Integration
+893,45,The system shall allow the initiator to cancel any meetings which they initiated.,F,FR-Integration
+894,45,The system shall allow the initiator to send and receive messages from users.,F,FR-Notification
+895,45,The system shall authenticate users at the beginning each session.,F,FR-Integration
+896,45,The system shall allow the user to view their schedule.,F,FR-Integration
+897,45,The system shall notify the user of any schedule changes.,F,FR-Notification
+898,45,The system shall allow users to send and receive messages.,F,FR-Notification
+899,45,The system shall request a user response to initiator or mediator messages.,F,FR-Notification
+900,45,The system shall allow the user to modify the date preference set of an already submitted meeting response.,F,FR-Integration
+901,45, The system shall allow the user to modify the location preference set of an already submitted meeting response.,F,FR-Integration
+902,45,The system shall allow the user to modify the equipment requirement set of an already submitted meeting response.,F,FR-Integration
+903,45,The system shall allow the user to modify the date exclusion set of an already submitted meeting response.,F,FR-Integration
+904,45,The system shall allow the user to change the password.,F,FR-Integration
+905,45,The system shall allow the user to view past attended meetings.,F,FR-Integration
+906,45,The system shall allow the user to view pending meetings.,F,FR-Integration
+907,45,The system shall show the meetings to the user in ascending time order by default.,F,FR-UI
+908,45,The system shall allow users to view equipment information.,F,FR-Integration
+909,45,The system shall allow users to view other usersâ information.,F,FR-UI
+910,45,The system shall allow user to specify custom meeting locations.,F,FR-Integration
+911,45,The system shall allow users to view location information.,F,FR-Integration
+912,45,The system shall allow users to search  for available distributed location templates(if any).,F,FR-Integration
+913,45,The system shall allow users to view information concerning the available distributed location templates(if any).,F,FR-Integration
+914,45,The web application shall add no more than 5 seconds of perceivable overhead time to any necessary web and database transaction time.,PE,NFR-PE
+915,45,The system shall utilize HTTPS communication to ensure data confidentiality.,SE,NFR-SE
+916,45,User authentication and privileges are defined outside the scope of the sytem by the Microsoft Active Directroy Server.,SE,NFR-SE
+917,45,Personal information security is defined outside the scope of the SDMS by the database server.,SE,NFR-SE
+918,45,Users shall be required to log into the system for all operations except the operations on the login page.,SE,NFR-SE
+919,45,The system shall run on Windows Server 2003.,PO,NFR-PO
+920,45,The system shall be compatible with IIS6.0 and above or  Apache 2.0 and above.,PO,NFR-PO
+921,46,The system shall display all the products that can be configured.,F,FR-UI
+922,46,The system shall allow user to select the product to configure.,F,FR-Integration
+923,46,The system shall display all the available components of the product to configure.,F,FR-UI
+924,46,The system shall enable user to add one or more component to the configuration.,F,FR-Integration
+925,46,The system shall notify the user about any conflict in the current configuration.,F,FR-Notification
+926,46,The system shall allow user to confirm the completion of current configuration.,F,FR-Integration
+927,46,The system shall display detailed information of the selected products.,F,FR-UI
+928,46,The system shall provide browsing options to see product details.,F,FR-Integration
+929,46,The system shall display detailed product categorization to the user.,F,FR-UI
+930,46,The system shall enable user to enter the search text on the screen.,F,FR-UI
+931,46,The system shall enable user to select multiple options on the screen to search.,F,FR-UI
+932,46,The system shall display all the matching products based on the search.,F,FR-UI
+933,46,The system shall display only 10 matching result on the current screen.,F,FR-UI
+934,46,The system shall enable user to navigate between the search results.,F,FR-Integration
+935,46,The system shall notify the user when no matching product is found on the search.,F,FR-Notification
+936,46,The system shall allow user to create profile and set his credential.,F,FR-Integration
+937,46,The system shall authenticate user credentials to view the profile.,F,FR-Integration
+938,46,The system shall allow user to update the profile information.,F,FR-Integration
+939,46,The system shall display both the active and completed order history in the customer profile.,F,FR-UI
+940,46,The system shall allow user to select the order from the order history.,F,FR-Integration
+941,46,The system shall display the detailed information about the selected order.,F,FR-UI
+942,46,The system shall display the most frequently searched items by the user in the profile.,F,FR-UI
+943,46,The system shall allow user to register for newsletters and surveys in the profile.,F,FR-Integration
+944,46,The system shall allow user to select the support type he wants.,F,FR-Integration
+945,46,The system shall allow user to enter the customer and product information for the support.,F,FR-Integration
+946,46,The system shall display the customer support contact numbers on the screen.,F,FR-UI
+947,46,The system shall allow user to enter the contact number for support personnel to call.,F,FR-Integration
+948,46,The system shall display the online help upon request.,F,FR-UI
+949,46,The system shall display the FAQâs upon request.,F,FR-UI
+950,46,The system shall maintain customer email information as a required part of customer profile.,F,FR-Integration
+951,46,The system shall send an order confirmation to the user through email.,F,FR-Notification
+952,46,The system shall display detailed invoice for current order once it is confirmed.,F,FR-UI
+953,46,The system shall optionally allow user to print the invoice.,F,FR-Integration
+954,46,The system shall provide shopping cart during online purchase.,F,FR-Integration
+955,46,The system shall allow user to add/remove products in the shopping cart.,F,FR-Integration
+956,46,The system shall display different shipping options provided by shipping department.,F,FR-UI
+957,46,The system shall enable user to select the shipping method during payment process.,F,FR-Integration
+958,46,The system shall display the shipping charges.,F,FR-UI
+959,46,The system shall display tentative duration for shipping.,F,FR-UI
+960,46,The system shall allow user to enter the order information for tracking.,F,FR-Integration
+961,46,The system shall display the current tracking information about the order.,F,FR-UI
+962,46,The system shall calculate tax for the order.,F,FR-Logic
+963,46,The system shall display tax information for the order.,F,FR-UI
+964,46,The system shall display available payment methods for payment.,F,FR-UI
+965,46,The system shall allow user to select the payment method for order.,F,FR-Integration
+966,46,The system shall display the orders that are eligible to change.,F,FR-UI
+967,46,The system shall allow user to select the order to be changed.,F,FR-Integration
+968,46,The system shall allow user to cancel the order.,F,FR-Integration
+969,46,The system shall notify the user about any changes made to the order.,F,FR-Notification
+970,46,The system shall enable the user to enter their reviews and ratings.,F,FR-Integration
+971,46,The system shall display all the available financing options.,F,FR-UI
+972,46,The system shall allow user to select the financing option.,F,FR-Integration
+973,46,The system shall notify the use about the financing request.,F,FR-Notification
+974,46,The system shall allow user to view detailed sitemap.,F,FR-Integration
+975,46,The system shall display all the available promotions to the user.,F,FR-UI
+976,46,The system shall allow user to select available promotion.,F,FR-Integration
+977,46,The system shall allow user to confirm the purchase.,F,FR-Integration
+978,46,The system shall enable user to enter the payment information.,F,FR-Integration
+979,46,The system shall provide a uniform look and feel between all the web pages.,LF,NFR-LF
+980,46,The system shall provide a digital image for each product in the product catalog.,US,NFR-US
+981,46,The system shall provide use of icons and toolbars.,US,NFR-US
+982,46,The system shall provide handicap access.,US,NFR-US
+983,46,The system shall provide multi language support.,US,NFR-US
+984,46,The system shall provide a contractual agreement with an internet service provider for T3 access with 99.9999% availability.,A,NFR-A
+985,46,The system shall provide a contractual agreement with an internet service provider who can provide 99.999% availability through their network facilities onto the internet.,A,NFR-A
+986,46,The product shall be based on web and has to be run from a web server.,O,NFR-O
+987,46,The product shall take initial load time depending on internet connection strength which also depends on the media from which the product is run.,PE,NFR-PE
+988,46,The performance shall depend upon hardware components of the client/customer.,PE,NFR-PE
+989,46,The system shall use secure sockets in all transactions that include any confidential customer information.,SE,NFR-SE
+990,46,The system shall automatically log out all customers after a period of inactivity.,SE,NFR-SE
+991,46,The system shall confirm all transactions with the customerâs web browser.,US,NFR-US
+992,46,The system shall not leave any cookies on the customerâs computer containing the userâs password.,SE,NFR-SE
+993,46,The system shall not leave any cookies on the customerâs computer containing any of the userâs confidential information.,SE,NFR-SE
+994,46,The customerâs web browser shall never display a customerâs password.  It shall always be echoed with special characters representing typed characters.,SE,NFR-SE
+995,46,The customerâs web browser shall never display a customerâs credit card number after retrieving from the database.  It shall always be shown with just the last 4 digits of the credit card number.,SE,NFR-SE
+996,46,The systemâs back-end servers shall never display a customerâs password.  The customerâs password may be reset but never shown.,SE,NFR-SE
+997,46,The systemâs back-end databases shall be encrypted.,SE,NFR-SE
+998,47,The system shall allow the user to register for an account from any page in the system.,F,FR-Integration
+999,47,The system will use a single password per user to login to the E-Store System.,SE,NFR-SE
+1000,47,The system shall use secure socket layer (SSL) technology to ensure all payments made online and user logins are secure.,SE,NFR-SE
+1001,48,Any page of the application should not take more than 6 seconds to load on a DSL broadband connection.,PE,NFR-PE
+1002,48,The system may be throttled or slowed down on heavy loads to ensure service for everybody. By throttling is meant that certain functionality may be unavailable during heavy server load.,PE,NFR-PE
+1003,48,The application should be able to support 100 concurrent users without any performance degradation.,PE,NFR-PE
+1004,48,The system should be able to scale up to 500 concurrent users (if there is a need in the future) by installing additional hardware components.,SC,NFR-SC
+1005,48,The MTBF (if any) should not be less than 2 months.,A,NFR-A
+1006,48,A secure server will be required to ensure confidentiality of customerâs credit card and other details.,SE,NFR-SE
+1007,48,The user interface of the system should be very user friendly. ,US,NFR-US
+1008,48,It should not take more than 120 seconds for a new user to register for an account.,US,NFR-US
+1009,48,It should not take more than 90 seconds for a registered user to place an order.,US,NFR-US
+1010,48,The system should be easy enough to maintain that someone else could do it with a manual and a few hours training.,MN,NFR-MN
+1011,48,The system should be portable to various operating environments.,PO,NFR-PO
+1012,49,Registered User must be able to maintain his/her session information for at least 60 minutes of inactive session before the system prompts him to log out of the system. The registered user must be provided with all the options of the E-store regardless of the time when he/she logs in.,F,FR-Integration
+1013,49,The entire website must be user-friendly and easily navigable. The website must be provided with a site map for quick access to a particular link according to the requirement specification. The user must be able to find what he/she wants from the site without any difficulty. The website must adhere to branding schemes and the layout of the web pages must be uniform throughout  ,US,NFR-US
+1014,49,The system shall support up to 10000 simultaneous users against the central database at any given time and up to 5000 simultaneous users against the local servers at any one time. The performance of the website must be optimal incase of huge loads and hence appropriate load balancing must be done to achieve this. There can be any number of mirror servers readily available in case of huge loads without the user getting any delay.,PE,NFR-PE
+1015,49,The website must provide highest degree of security to the registered users. All the transactions that are made must be secured. The sensitive information passed to and from the website must be secured. Identity theft and other security related issues must be solved. Unauthorized transmission of sensitive information of the user to third party websites for reference must be avoided. On the basis of user agreement the information must be processed. All the information about the registered user must be securely stored in the central database.,SE,NFR-SE
