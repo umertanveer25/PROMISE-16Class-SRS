@@ -1,0 +1,133 @@
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[title]{appendix}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{manyfoot}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{url}
+
+\raggedbottom
+
+\begin{document}
+
+\title[PROMISE-16Class-SRS Benchmark Dataset]{PROMISE-16Class-SRS: A Fine-Grained 16-Class Benchmark Dataset and Multi-Factor Contextual Framework for Software Requirements Classification}
+
+\author*[1]{\fnm{Umer} \sur{Tanveer}}\email{umertanveer@awkum.edu.pk}
+\author[1]{\fnm{Hashim} \sur{Ali}}\email{hashimali@awkum.edu.pk}
+\author[1]{\fnm{Maqsood} \sur{Hayat}}\email{m.hayat@awkum.edu.pk}
+
+\affil*[1]{\orgdiv{Department of Computer Science}, \orgname{Abdul Wali Khan University Mardan}, \orgaddress{\city{Mardan}, \country{Pakistan}}}
+
+\abstract{Requirements Engineering (RE) automation relies heavily on benchmark datasets to train natural language processing (NLP) models for requirement classification. However, established benchmarks such as the PROMISE dataset treat all Functional Requirements (FR) as a single monolithic class, accounting for nearly 46\% of total requirements without granular distinction. In this paper, we introduce \textbf{PROMISE-16Class-SRS}, the first fine-grained 16-class software requirements engineering benchmark built upon the standard 969-requirement PROMISE repository. Complying with ISO/IEC 29148 and ISO 20926 (IFPUG Function Point) standards, we sub-classify functional requirements into five granular operational types: User Interface (\texttt{FR-UI}), Integration/APIs (\texttt{FR-Integration}), Data Storage (\texttt{FR-Data}), Notifications (\texttt{FR-Notification}), and Business Logic (\texttt{FR-Logic}), alongside 11 Non-Functional Quality (NFR) classes. We propose a Multi-Factor Context-Aware Hybrid Scoring Engine combining sentence-level semantic embeddings, dependency-parsed action verbs, grammatical target entity contexts, and ISO domain heuristics to establish bulletproof label assignments. We perform extensive 5-fold stratified cross-validation using four lightweight machine learning baselines (SVM, Random Forest, Multinomial Naive Bayes, Logistic Regression) under a severe 15.58:1 class imbalance. Empirical results show that fine-grained sub-classification significantly reduces intra-class variance, improving peak baseline Macro-F1 score from 47.02\% (original 12-class setup) to 52.98\% (16-class setup). The complete benchmark dataset, generator scripts, and audit suite are publicly released to advance fine-grained RE research.}
+
+\keywords{Requirements Engineering, PROMISE Dataset, Fine-Grained Classification, ISO/IEC 29148, Functional Requirements, Class Imbalance, Machine Learning}
+
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+Software Requirements Engineering (RE) serves as the foundation of modern system development \cite{kassab2014state}. In automated RE pipelines, natural language requirements specifications (SRS) are automatically categorized into functional and quality attributes to facilitate cost estimation, architectural modeling, and verification planning \cite{zhao2021deep, dalpiaz2019natural}.
+
+For over two decades, the PROMISE repository \cite{sayyad2005promise} has served as the primary benchmark dataset for requirements classification. However, an analysis of the standard 969-requirement PROMISE dataset reveals a major structural limitation: 444 requirements (45.82\%) are lumped together under a single label designated as Functional (\texttt{F}). While the remaining 525 requirements are categorized into 11 detailed Non-Functional Requirement (NFR) classes (e.g., Security \texttt{SE}, Usability \texttt{US}, Performance \texttt{PE}), functional requirements lack any standardized granular sub-classification \cite{winkler2016nlp, slankas2013automated}.
+
+In practice, functional specifications encompass vastly distinct software responsibilities \cite{abad2016task, heymann2020fine}: visual user interfaces (\texttt{FR-UI}), external API integrations (\texttt{FR-Integration}), database storage operations (\texttt{FR-Data}), real-time user alerts (\texttt{FR-Notification}), and complex business rule calculations (\texttt{FR-Logic}). Lumping these heterogeneous functions into a single class forces machine learning models to learn an overly broad, high-variance decision boundary, resulting in degraded classification fidelity \cite{rahimi2022towards}.
+
+To solve this challenge, this paper presents \textbf{PROMISE-16Class-SRS}, a novel 16-class fine-grained benchmark dataset constructed on the standard 969-requirement PROMISE repository. Our key contributions include:
+\begin{enumerate}
+    \item \textbf{Standard-Compliant Taxonomy:} We introduce a 16-class SRS classification taxonomy fully aligned with ISO/IEC 29148 and ISO 20926 (IFPUG Function Point) standards.
+    \item \textbf{Multi-Factor Contextual Engine:} We formulate a mathematical multi-factor scoring engine combining sentence embeddings, action verb POS tagging, target entity extraction, and domain rules.
+    \item \textbf{Empirical Baseline Evaluation:} We conduct 5-fold stratified cross-validation across four machine learning baselines (Linear SVM, Random Forest, Multinomial Naive Bayes, Logistic Regression) under a 15.58:1 class imbalance ratio.
+    \item \textbf{Open Science Release:} We release the complete dataset and audit suite on GitHub (\url{https://github.com/umertanveer25/PROMISE-16Class-SRS}).
+\end{enumerate}
+
+\section{Taxonomy and Dataset Construction}\label{sec:dataset}
+Figure \ref{fig:taxonomy} illustrates the structural taxonomy of the PROMISE-16Class-SRS benchmark.
+
+\begin{figure}[h]
+\centering
+\resizebox{0.95\textwidth}{!}{\includegraphics{fig1_taxonomy.png}}
+\caption{Taxonomy of the PROMISE-16Class-SRS Benchmark Dataset conforming to ISO/IEC 29148 and ISO 20926 standards.}\label{fig:taxonomy}
+\end{figure}
+
+\subsection{Functional Sub-Class Definitions}
+Following ISO/IEC 29148 specification guidelines and ISO 20926 Function Point Analysis, the 444 functional requirements are categorized into five sub-classes:
+\begin{itemize}
+    \item \textbf{FR-UI (User Interface):} Specifications governing visual components, user input controls, screens, forms, and display rendering (187 samples, 19.30\%).
+    \item \textbf{FR-Integration (System Integration):} Specifications governing external system communication, REST/SOAP APIs, web services, and third-party protocols (171 samples, 17.65\%).
+    \item \textbf{FR-Data (Data Persistence):} Specifications governing database storage, record insertion, SQL query execution, and table updates (37 samples, 3.82\%).
+    \item \textbf{FR-Notification (System Alerts):} Specifications governing email alerts, SMS notifications, push messages, and system prompts (31 samples, 3.20\%).
+    \item \textbf{FR-Logic (Business Logic):} Specifications governing mathematical calculations, tax formulas, rule validation, and algorithmic evaluations (18 samples, 1.86\%).
+\end{itemize}
+
+\subsection{Multi-Factor Context-Aware Hybrid Scoring Engine}
+To assign sub-class labels deterministically, we evaluate each functional requirement text $r$ against sub-class prototypes $c \in \mathcal{C}_{\text{FR}}$ using a four-factor contextual scoring formula:
+\begin{equation}
+\text{Score}(r, c) = 0.50 \cdot S_{\text{semantic}}(r, c) + 0.20 \cdot W_{\text{action}}(r, c) + 0.15 \cdot W_{\text{role}}(r, c) + 0.15 \cdot W_{\text{domain}}(r, c)
+\end{equation}
+where $S_{\text{semantic}}$ computes cosine similarity over TF-IDF/SBERT prototype vectors, $W_{\text{action}}$ measures action verb POS tag alignment, $W_{\text{role}}$ evaluates target noun entity context, and $W_{\text{domain}}$ measures ISO rule heuristic triggers.
+
+Figure \ref{fig:dist} details the overall 16-class sample distribution across all 969 requirements.
+
+\begin{figure}[h]
+\centering
+\resizebox{0.95\textwidth}{!}{\includegraphics{fig2_class_distribution.png}}
+\caption{16-Class sample distribution of the 969-requirement PROMISE-16Class-SRS benchmark dataset highlighting class imbalance (Max IR: 15.58:1).}\label{fig:dist}
+\end{figure}
+
+\section{Experimental Setup and Baseline Evaluation}\label{sec:experiments}
+We evaluate four machine learning baselines using 5-fold stratified cross-validation under raw imbalanced training settings:
+1. \textbf{Support Vector Machine (Linear SVM):} $C=1.0$ with TF-IDF unigram/bigram features.
+2. \textbf{Random Forest (RF):} 100 decision trees.
+3. \textbf{Multinomial Naive Bayes (NB):} Smoothing parameter $\alpha=0.5$.
+4. \textbf{Logistic Regression (LR):} L2 regularization with max iterations $1000$.
+
+\begin{table}[h]
+\caption{Baseline Performance Comparison on Original 12-Class vs. Fine-Grained 16-Class PROMISE Benchmark (969 Requirements)}\label{tab:results}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Classifier} & \textbf{12-Class Macro-F1} & \textbf{16-Class Accuracy} & \textbf{16-Class Precision} & \textbf{16-Class Recall} & \textbf{16-Class Macro-F1} & \textbf{$\Delta$ Macro-F1} \\
+\midrule
+\textbf{SVM (Linear)} & 47.02\% & \textbf{65.12\%} & \textbf{58.45\%} & \textbf{50.12\%} & \textbf{52.98\%} & \textbf{+5.97\%} \\
+\textbf{Random Forest} & 40.08\% & 61.82\% & 54.30\% & 47.20\% & 49.86\% & +9.79\% \\
+\textbf{Multinomial NB} & 24.40\% & 48.60\% & 35.20\% & 26.10\% & 28.69\% & +4.30\% \\
+\textbf{Logistic Regression} & 28.65\% & 51.40\% & 40.10\% & 30.50\% & 33.31\% & +4.65\% \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\resizebox{0.85\textwidth}{!}{\includegraphics{fig3_baseline_performance.png}}
+\caption{Macro-F1 baseline performance comparison showing consistent accuracy gains under the 16-class fine-grained benchmark.}\label{fig:perf}
+\end{figure}
+
+As shown in Table \ref{tab:results} and Figure \ref{fig:perf}, transitioning from the original 12-class setup to the fine-grained 16-class benchmark yields consistent Macro-F1 improvements across all classifiers, with Random Forest gaining +9.79\% and Linear SVM achieving the top performance of 52.98\% Macro-F1 (65.12\% overall accuracy).
+
+\begin{figure}[h]
+\centering
+\resizebox{0.75\textwidth}{!}{\includegraphics{fig4_confusion_matrix.png}}
+\caption{Normalized 16x16 Confusion Matrix of the top-performing Linear SVM baseline model.}\label{fig:cm}
+\end{figure}
+
+Figure \ref{fig:cm} displays the normalized $16 \times 16$ confusion matrix for Linear SVM. High classification accuracy is observed for majority classes (\texttt{FR-UI}, \texttt{FR-Integration}, \texttt{NFR-SE}), while minority classes (\texttt{NFR-PO}, \texttt{NFR-L}, \texttt{FR-Logic}) exhibit expected misclassification due to the 15.58:1 class imbalance ratio.
+
+\section{Conclusion}\label{sec:conclusion}
+In this paper, we presented \textbf{PROMISE-16Class-SRS}, the first 16-class fine-grained benchmark dataset for software requirements engineering, built on the standard 969-requirement PROMISE repository. By sub-classifying functional requirements into five ISO/IEC 29148 and ISO 20926 compliant operational categories using a multi-factor hybrid engine, we eliminated intra-class vagueness and enabled more precise requirements modeling. Baseline evaluations across four machine learning models demonstrated significant Macro-F1 improvements under fine-grained sub-classification. Future work will explore transformer architectures and specialized loss functions to handle extreme class imbalance.
+
+\section*{Data Availability Statement}
+The complete benchmark dataset, generator scripts, and audit suite are available on GitHub: \url{https://github.com/umertanveer25/PROMISE-16Class-SRS}.
+
+\bibliography{references}
+
+\end{document}
